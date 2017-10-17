@@ -1,24 +1,32 @@
 body {
   background-color: black;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 * {
-  font-family: 'Manuale', serif;
+  font-family: 'Work Sans', serif;
   font-size: 1.05em;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 3em;
   font-family: 'Raleway', sans-serif;
+  margin: 40px 0;
 }
 
 #root {
   margin: 0px 200px;
   background-color: white;
   padding: 10px 100px;
+  position: relative;
+}
+
+.rightStrip {
+  float: right;
+  position: absolute;
+  right: 50px;
+  top: 20px;
 }
 
 .content {
@@ -35,18 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navbar {
-  position: relative;
-  height: 200px;
-}
-
-.logo {
-  float: right;
+  height: 75px;
 }
 
 .tabs {
-  position: absolute;
+  margin-left: 0;
   bottom: 0;
   padding-left: 0;
+  padding-top: 40px;
 }
 
 .tabs li {
@@ -55,14 +59,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1em;
   text-align: center;
   list-style-type: none;
-  padding: 0px 10px;
+  padding: 0px 25px 0px 0px;
 }
 
 .tabs:hover {
   cursor: pointer;
 }
 .tabs li:hover {
-  color: darkgrey;
+  color: red;
   user-select: none;
 }
 
