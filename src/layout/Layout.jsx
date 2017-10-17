@@ -1,10 +1,13 @@
 import React from 'react';
-import Header from './Header.jsx';
+import Navbar from './Navbar.jsx';
+import Content from './Content.jsx';
 
 const Layout = ({children}) => (
-  <div>
-    <Header />
-    {children}
+  <div class="layout">
+    <Navbar />
+    <Content>
+      {children}
+    </Content>
   </div>
 )
 
