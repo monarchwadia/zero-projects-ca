@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import ZeroProjectsLogo from '../components/ZeroProjectsLogo.jsx';
 
 const Navbar = () => (
   <div className="navbar">
     <ul className="tabs header-font no-select">
-      <li>Consulting</li>
-      <li>Technologies</li>
-      <li>Clients</li>
-      <li>Contact</li>
-      <li>Our team</li>
+      <Link to="/"><li>Consulting</li></Link>
+      <Link to="/technologies"><li>Technologies</li></Link>
+      <Link to="/clients"><li>Clients</li></Link>
+      <Link to="/contact"><li>Contact</li></Link>
+      <Link to="/our-team"><li>Our team</li></Link>
     </ul>
   </div>
 )
