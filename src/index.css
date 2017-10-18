@@ -24,14 +24,14 @@ strong {
 }
 
 h2 { font-size: 1.8em; }
-h3 { font-size: 1.7em; }
+h3 { font-size: 1.4em; }
 
 p {
   margin-bottom: 20px;
 }
 
 #root {
-  margin: 0px 200px;
+  margin: 25px 175px;
   background-color: white;
   padding: 10px 100px;
   position: relative;
@@ -58,7 +58,7 @@ p {
 
 
 .navbar {
-  height: 75px;
+  
 }
 
 .tabs {
@@ -77,13 +77,11 @@ p {
   padding: 0px 25px 0px 0px;
 }
 
-.tabs:hover {
-  cursor: pointer;
-}
-.tabs li:hover {
+
+.tabs a:hover, a.active {
   color: red;
-  user-select: none;
 }
+
 
 .no-select, .no-select * {
   -webkit-touch-callout: none; /* iOS Safari */

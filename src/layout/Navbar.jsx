@@ -1,13 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => (
   <div className="navbar">
     <ul className="tabs header-font no-select">
-      <Link to="/"><li>Consulting</li></Link>
-      <Link to="/technologies"><li>Technologies</li></Link>
-      <Link to="/contact"><li>Contact</li></Link>
-      <Link to="/our-team"><li>Our team</li></Link>
+      {
+        [
+          ["Home",      "/"],
+          ["Services",      "/services"],
+          ["Technologies",  "/technologies"],
+          ["Contact",       "/contact"],
+          ["Our Team",      "/our-team"]
+        ]
+        .map(r => {
+          const label = r[0];
+          const route = r[1];
+
+          return <NavLink to={route} exact activeClassName="active"><li>{label}</li></NavLink>
+        })
+
+      }
     </ul>
   </div>
 )
