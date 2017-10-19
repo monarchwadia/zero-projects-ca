@@ -8,6 +8,8 @@ import Technologies from './pages/Technologies.jsx';
 import Contact from './pages/Contact.jsx';
 import Services from './pages/Services.jsx';
 import Layout from './layout/Layout.jsx';
+import Sectors from './pages/Sectors.jsx';
+
 
 
 const Root = () => (
@@ -17,6 +19,7 @@ const Root = () => (
       <Route path="/technologies" component = { Technologies } />
       <Route path="/services" component = { Services } />
       <Route path="/contact" component = { Contact } />
+      <Route path="/sectors" component = { Sectors } />
     </Layout>
   </BrowserRouter>
 )

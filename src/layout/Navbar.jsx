@@ -8,6 +8,7 @@ const Navbar = () => (
         [
           ["Home",      "/"],
           ["Services",      "/services"],
+          ["Sectors",      "/sectors"],
           ["Technologies",  "/technologies"],
           ["Contact",       "/contact"]
         ]

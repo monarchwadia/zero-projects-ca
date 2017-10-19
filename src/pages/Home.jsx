@@ -28,7 +28,7 @@ const Consulting = () => (
 
     <p><Link to="/services">Read more about our services</Link></p>
 
-    <h2> We're just a few blocks away </h2>
+    <h2>We're just a few blocks away.</h2>
 
     <p>
       We're located conveniently in the heart of downtown Toronto's exploding startup scene, and we can meet you at your offices no matter where you're located. We would love to help you with your technology needs.

@@ -1,13 +1,11 @@
 import React from 'react';
 import Page from '../components/Page.jsx';
 
-const Services = () => (
+const Sectors = () => (
   <Page>
-    <h1>Our services.</h1>
+    <h1>We work your way.</h1>
 
-    <p>We can help you in a wide variety of full-stack Javascript needs. Our experts </p>
-
-    <h2>Angular 1 → Angular 2 Migrations</h2>
+    <h2>For Startups & Ventures</h2>
     <p>
       If you're a <strong>startup</strong> and need help building or growing an MVP, we can help. If you need
       assistance in building or training a team, or installing best practices, we can help there as well.
@@ -16,7 +14,7 @@ const Services = () => (
       through the transition.
     </p>
 
-    <h2>Full stack development</h2>
+    <h2>For Corporations & SMBs</h2>
     <p>
       If you're in a <strong>large corporate</strong> setting, and need a reliable team who can help quickly deliver 
       <strong> robust business systems</strong>, we're your guys. Tight deadlines are no problem for us. We can also <strong>train your team</strong> to
@@ -24,7 +22,7 @@ const Services = () => (
       We make sure everything we write is reusable, maintainable and documented.
     </p>
 
-    <h2>Architecture & system design</h2>
+    <h2>For Government & Public Sector</h2>
     <p>
       If you work in the <strong>government</strong> or in <strong>public sector organizations</strong>, we can help you
       leverage the tried-and-tested ecosystem of technologies and web frameworks that Javascript represents. We excel
@@ -32,7 +30,7 @@ const Services = () => (
       and on time.
     </p>
 
-    <h2>Legacy software maintenance & refactoring</h2>
+    <h2>For Non-Profits & Charities</h2>
     <p>
       We work with charities, non-profits and social enterprises to help them serve their donors and customers better.
       Web-based user interfaces offer a world of options in <strong>engagement, outreach and fundraising</strong>. We
@@ -43,4 +41,4 @@ const Services = () => (
   </Page>
 )
 
-export default Services;
+export default Sectors;
