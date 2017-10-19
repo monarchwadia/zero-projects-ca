@@ -12,6 +12,8 @@ const Consulting = () => (
       Zero Projects is a consulting firm that helps make technology simple again. Business is hard -- technology doesn't have to be. Let us take care of your technology needs for you, so that you can focus on your business and your customers.
     </p>
 
+<p><Link to="/contact">Contact us now to get in touch with an expert</Link></p>
+
     <h2>Modern JS development services...</h2>
 
     <p>
