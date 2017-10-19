@@ -9,8 +9,9 @@ const Navbar = () => (
           ["Home",      "/"],
           ["Services",      "/services"],
           ["Technologies",  "/technologies"],
-          ["Contact",       "/contact"],
-          ["Our Team",      "/our-team"]
+          ["Clients",      "/clients"],
+          ["Our Team",      "/our-team"],
+          ["Contact",       "/contact"]
         ]
         .map(r => {
           const label = r[0];

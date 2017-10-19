@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../components/Page.jsx';
 
-const Services = () => (
+const Clients = () => (
   <Page>
     <h2>
       Modern Agile methods. <br/>
@@ -50,4 +50,4 @@ const Services = () => (
   </Page>
 )
 
-export default Services;
+export default Clients;

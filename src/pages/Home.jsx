@@ -3,28 +3,20 @@ import Page from '../components/Page.jsx';
 
 const Consulting = () => (
   <Page>
-    <h2>
-      Software is eating the world. <br/>
-      Javascript is eating software. <br/>
-      We eat Javascript for breakfast. <br/>
-    </h2>
+    <h1>
+      We simplify complexity.
+    </h1>
 
     <p>
-      Got Javascript problems? We can help! Whether it's <strong>React</strong>, <strong>Node.js</strong>, <strong>Angular 1</strong> or <strong>Angular 2</strong>, we
-      have the knowledge and expertise to help your business evolve through the toughest of
-      technical challenges. Zero Projects is the best choice when big or complex software projects need help.
+      Zero Projects is a consulting firm that helps make technology simple again .The <strong>science</strong> of building complex systems is also the <strong>art</strong> of breaking hard problems down into simple, interchangeable parts. Complex systems in a  language like <strong>Javascript</strong> are made up of parts that are individually testable  and maintainable, yet composable and reusable.
     </p>
 
-    <h3>For Startups & Ventures</h3>
+    <h3>Angular & React consultants</h3>
     <p>
-      If you're a <strong>startup</strong> and need help building or growing an MVP, we can help. If you need
-      assistance in building or training a team, or installing best practices, we can help there as well.
-      If you're <strong>migrating a Rails or Java app</strong> to Node.js, or vice versa, our developers are highly skilled in
-      multiple languages (that's right, <strong>we're not just Javascript developers</strong>) and can help see you
-      through the transition.
+      
     </p>
 
-    <h3>For Corporations & SMBs</h3>
+    <h3>Full stack developers</h3>
     <p>
       If you're in a <strong>large corporate</strong> setting, and need a reliable team who can help quickly deliver 
       <strong> robust business systems</strong>, we're your guys. Tight deadlines are no problem for us. We can also <strong>train your team</strong> to
@@ -32,7 +24,7 @@ const Consulting = () => (
       We make sure everything we write is reusable, maintainable and documented.
     </p>
 
-    <h3>For Government & Public Sector</h3>
+    <h3></h3>
     <p>
       If you work in the <strong>government</strong> or in <strong>public sector organizations</strong>, we can help you
       leverage the tried-and-tested ecosystem of technologies and web frameworks that Javascript represents. We excel
@@ -40,7 +32,7 @@ const Consulting = () => (
       and on time.
     </p>
 
-    <h3>For Non-Profits & Charities</h3>
+    <h3></h3>
     <p>
       We work with charities, non-profits and social enterprises to help them serve their donors and customers better.
       Web-based user interfaces offer a world of options in <strong>engagement, outreach and fundraising</strong>. We
