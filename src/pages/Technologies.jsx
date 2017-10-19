@@ -3,11 +3,7 @@ import Page from '../components/Page.jsx';
 
 const Services = () => (
   <Page>
-    <h2>
-      Software is eating the world. <br/>
-      Javascript is eating software. <br/>
-      We eat Javascript for breakfast. <br/>
-    </h2>
+    <h1>Tech we work with.</h1>
 
     <p>
       Humility, integrity and respect are the cornerstone of our services strategy. Everything else flows from
@@ -48,6 +44,11 @@ const Services = () => (
       and more efficient. 
     </p>
 
+    <h2>Java development</h2>
+
+    <p></p>
+
+    <h2>Ruby on Rails development</h2>
   </Page>
 )
 

@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import React from 'react';
 import Page from '../components/Page.jsx';
 
@@ -5,39 +6,33 @@ const Services = () => (
   <Page>
     <h1>Our services.</h1>
 
-    <p>We can help you in a wide variety of full-stack Javascript needs. Our experts </p>
+    <p>Our project managers have years of experience in delivering quality software on schedule and within budget. We communicate continuously with you throughout the process of building out your project, allowing us to make changes and pivot as with minimal delay. We work closely with you to ensure that your project is successful.</p>
 
-    <h2>Angular 1 → Angular 2 Migrations</h2>
-    <p>
-      If you're a <strong>startup</strong> and need help building or growing an MVP, we can help. If you need
-      assistance in building or training a team, or installing best practices, we can help there as well.
-      If you're <strong>migrating a Rails or Java app</strong> to Node.js, or vice versa, our developers are highly skilled in
-      multiple languages (that's right, <strong>we're not just Javascript developers</strong>) and can help see you
-      through the transition.
-    </p>
+    <p><Link to="/contact">Contact us now to get in touch with an expert</Link></p>
 
     <h2>Full stack development</h2>
     <p>
-      If you're in a <strong>large corporate</strong> setting, and need a reliable team who can help quickly deliver 
-      <strong> robust business systems</strong>, we're your guys. Tight deadlines are no problem for us. We can also <strong>train your team</strong> to
-      work with Javascript more effectively. We also really shine when it comes to proof of concept (<strong>POC</strong>) work.
-      We make sure everything we write is reusable, maintainable and documented.
+      Our software developers have produced applications in multiple paradigms, domains, languages, technology stacks, architectures and frameworks. We preserve best practices and use appropriate design patterns, even when under pressure to deliver rapidly. We understand that best practices exist to speed up development in the long run.
     </p>
 
-    <h2>Architecture & system design</h2>
+    <h2>Captivating UX/UI Design</h2>
     <p>
-      If you work in the <strong>government</strong> or in <strong>public sector organizations</strong>, we can help you
-      leverage the tried-and-tested ecosystem of technologies and web frameworks that Javascript represents. We excel
-      in building <strong>responsive UI</strong> experiences that meet <strong>accessibility standards</strong> within budget
-      and on time.
+    Professional grade UX/UI design is absolutely critical to the legitimacy of your product. In addition to technical design expertise, our designers have an excellent eye for ergonomics and style, allowing them to design attractive user experiences that your users find comfortable to use.
     </p>
 
     <h2>Legacy software maintenance & refactoring</h2>
     <p>
-      We work with charities, non-profits and social enterprises to help them serve their donors and customers better.
-      Web-based user interfaces offer a world of options in <strong>engagement, outreach and fundraising</strong>. We
-      can design and develop software for <strong>mobile devices and tablets</strong> that can make fundraising easier
-      and more efficient. 
+      Already have a software project? We can help manage your existing codebase, regardless of how large or small it is. Whether it needs refactoring, extension, cleanup or long-term maintenance, we can take care of it for you going forward. We'd love to hear more about your project's particular needs.
+    </p>
+
+    <h2>Architecture & system design</h2>
+    <p>
+      Javascript systems need particular attention when it comes to architecture because of the flexibility that the language affords. Our engineers have handled full-stack architecture and system design work for Fortune 500 companies with teams of more than 200 people. Whatever your needs are, we can take care of them. 
+    </p>
+
+    <h2>Angular 1 → Angular 2 Migrations</h2>
+    <p>
+      Migrating Angular 1 projects to Angular 2 is not an easy task, but it can be done with minimum expenditure given expertise and knowledge. We can help your team migrate their codebase as well as their skillset over to Angular 2 with a combination of technical solutions and training.
     </p>
 
   </Page>

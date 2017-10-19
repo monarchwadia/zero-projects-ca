@@ -3,7 +3,7 @@ import Page from '../components/Page.jsx';
 
 const Sectors = () => (
   <Page>
-    <h1>We work your way.</h1>
+    <h1>We adapt to your needs.</h1>
 
     <h2>For Startups & Ventures</h2>
     <p>
