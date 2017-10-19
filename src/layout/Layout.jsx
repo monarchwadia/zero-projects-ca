@@ -4,7 +4,7 @@ import Content from './Content.jsx';
 import RightStrip from './RightStrip.jsx';
 
 const Layout = ({children}) => (
-  <div class="layout">
+  <div className="layout">
     <div>
       <Content>
         <Navbar />

@@ -9,15 +9,19 @@ const Navbar = () => (
           ["Home",      "/"],
           ["Services",      "/services"],
           ["Technologies",  "/technologies"],
-          ["Clients",      "/clients"],
-          ["Our Team",      "/our-team"],
           ["Contact",       "/contact"]
         ]
         .map(r => {
           const label = r[0];
           const route = r[1];
 
-          return <NavLink to={route} exact activeClassName="active"><li>{label}</li></NavLink>
+          return <NavLink exact 
+            key={route}
+            to={route}  
+            activeClassName="active"
+          >
+            <li>{label}</li>
+          </NavLink>
         })
 
       }

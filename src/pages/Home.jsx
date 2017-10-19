@@ -1,45 +1,40 @@
 import React from 'react';
 import Page from '../components/Page.jsx';
+import {Link} from 'react-router-dom';
 
 const Consulting = () => (
   <Page>
     <h1>
-      We simplify complexity.
+      Javascript Consultants.
     </h1>
 
     <p>
-      Zero Projects is a consulting firm that helps make technology simple again .The <strong>science</strong> of building complex systems is also the <strong>art</strong> of breaking hard problems down into simple, interchangeable parts. Complex systems in a  language like <strong>Javascript</strong> are made up of parts that are individually testable  and maintainable, yet composable and reusable.
+      Zero Projects is a consulting firm that helps make technology simple again. Business is hard -- technology doesn't have to be. Let us take care of your technology needs for you, so that you can focus on your business and your customers.
     </p>
 
-    <h3>Angular & React consultants</h3>
+    <h2>Full-stack development services.</h2>
+
     <p>
-      
+      We work with a variety of technologies on both the frontend and the backend. Whether it's building engaging and beautiful user experiences in React, migrating a legacy Angular 1 project to Angular 2, or developing high-performance backend systems in Node.js, we can help you every step of the way.
     </p>
 
-    <h3>Full stack developers</h3>
+    <p><Link to="/technologies">Read more about the technologies we work with</Link></p>
+
+    <h2>Served with good old-fashioned values.</h2>
+
     <p>
-      If you're in a <strong>large corporate</strong> setting, and need a reliable team who can help quickly deliver 
-      <strong> robust business systems</strong>, we're your guys. Tight deadlines are no problem for us. We can also <strong>train your team</strong> to
-      work with Javascript more effectively. We also really shine when it comes to proof of concept (<strong>POC</strong>) work.
-      We make sure everything we write is reusable, maintainable and documented.
+      We love shiny new technology just as much as everyone else, but humility, integrity and respect are the cornerstone of our services strategy. Everything else flows from those roots. The people we work with matter more than the technologies we choose -- although we do excel at Javascript.
     </p>
 
-    <h3></h3>
+    <p><Link to="/services">Read more about our services</Link></p>
+
+    <h2> We're just a few blocks away </h2>
+
     <p>
-      If you work in the <strong>government</strong> or in <strong>public sector organizations</strong>, we can help you
-      leverage the tried-and-tested ecosystem of technologies and web frameworks that Javascript represents. We excel
-      in building <strong>responsive UI</strong> experiences that meet <strong>accessibility standards</strong> within budget
-      and on time.
+      We're located conveniently in the heart of downtown Toronto's exploding startup scene, and we can meet you at your offices no matter where you're located. We would love to help you with your technology needs.
     </p>
 
-    <h3></h3>
-    <p>
-      We work with charities, non-profits and social enterprises to help them serve their donors and customers better.
-      Web-based user interfaces offer a world of options in <strong>engagement, outreach and fundraising</strong>. We
-      can design and develop software for <strong>mobile devices and tablets</strong> that can make fundraising easier
-      and more efficient. 
-    </p>
-
+    <p><Link to="/contact-us">Click here to get in touch with us</Link></p>
   </Page>
 )
 

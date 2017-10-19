@@ -3,7 +3,7 @@ import Page from '../components/Page.jsx';
 
 const Consulting = () => (
   <Page>
-    <h1>Let's grab a coffee.</h1>
+    <h1>Let's grab coffee.</h1>
     <p>And you know that excellence isn't easy to achieve. You've crunched countless hours
     making your marketing work, freeing finances and  That's where we can help your project 
     soar above the rest. We have the tools, knowledge and expertise </p>

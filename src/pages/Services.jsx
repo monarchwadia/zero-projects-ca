@@ -3,16 +3,9 @@ import Page from '../components/Page.jsx';
 
 const Services = () => (
   <Page>
-    <h2>
-      Modern Agile methods. <br/>
-      Good, old-fashioned values. <br/>
-    </h2>
+    <h1>We work your way.</h1>
 
-    <p>
-      Humility, integrity and respect are the cornerstone of our services strategy. Everything else flows from
-      those roots. The people we work with matter more than the methodologies we choose -- although we do excel
-      at newer Agile methods. We also happily integrate with our clients' legacy Waterfall workflows.
-    </p>
+    <p></p>
 
     <h3>For Startups & Ventures</h3>
     <p>
