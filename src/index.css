@@ -39,6 +39,11 @@ p a {
   text-align: right;
 }
 
+.mapbox {
+  border: 5px solid black;
+  display:inline-block;
+}
+
 #root {
   margin: 25px 175px;
   background-color: white;

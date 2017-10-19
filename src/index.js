@@ -9,6 +9,7 @@ import Contact from './pages/Contact.jsx';
 import Services from './pages/Services.jsx';
 import Layout from './layout/Layout.jsx';
 import Sectors from './pages/Sectors.jsx';
+import Email from './pages/Email.jsx';
 
 
 
@@ -20,6 +21,7 @@ const Root = () => (
       <Route path="/services" component = { Services } />
       <Route path="/contact" component = { Contact } />
       <Route path="/sectors" component = { Sectors } />
+      <Route path="/email" component = { Email } />
     </Layout>
   </BrowserRouter>
 )
