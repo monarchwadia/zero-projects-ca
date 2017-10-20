@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 40px 0;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 strong {
   color: red;
 }
@@ -105,4 +109,28 @@ p a {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+.email-form {
+  width: 100%;
+}
+
+.email-form .text-input, .email-form .textarea-input {
+  display: inline;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 5px solid black;
+  padding: 6px 10px;
+}
+
+.email-form .textarea-input {
+  height: 200px;
+}
+
+.email-form .submit-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  float: right;
 }
