@@ -4,7 +4,7 @@
   "private": true,
 
   "//": "If the context is ever not ROOT, set it to that context.. for example, '/zero-projects-ca'",
-  "homepage": "/zero-projects-ca",
+  "homepage": ".",
 
   "dependencies": {
     "react": "^16.0.0",
