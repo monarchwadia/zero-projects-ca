@@ -58,20 +58,13 @@ p a {
   padding: 2%;
 }
 
-.topStrip .logo {
-  padding: 25px 5%;
-}
-
-.topStrip {
-  text-align: center;
-}
-
 .content {
-  /*padding: 100px 200px;*/
   display:inline-block;
   width: 100%;
   background-color: white;
-  padding: 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
 }
 
 .contentLeft {
@@ -94,14 +87,14 @@ p a {
   padding-bottom: 25px;
 }
 
-.tabs {
+.navbar .tabs {
   margin-left: 0;
   bottom: 0;
   padding-left: 0;
   padding-top: 40px;
 }
 
-.tabs li {
+.navbar .tabs li {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
@@ -110,13 +103,48 @@ p a {
   padding: 0px 25px 0px 0px;
 }
 
-
-.tabs a:hover, a.active {
+.navbar .tabs a:hover, a.active {
   color: red;
 }
 
+.navbar-responsive {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 125px;
+  width: 125px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+}
+
+.navbar-responsive .tabs {
+  position: fixed;
+  top: 145px;
+  left: 20px;
+  line-height: 75px;
+  font-size: 2em;
+  background-color: inherit;
+  display: inline-block;
+  padding: 0px 10px;
+  width: 100%;
+  left: 0;
+}
+
+.navbar-responsive .tabs li {
+  display: inline;
+  width: 100%;
+  list-style-type: none;
+  float: left;
+  text-align: left;
+}
 
 .no-select, .no-select * {
+  cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -152,6 +180,9 @@ p a {
 
 /* Media Queries */
 @media only screen and (min-width: 1024px) { 
+  .navbar-responsive {
+    display: none;
+  }
   .navbar {
     display: inline-block;
     width: 100%; 
@@ -171,12 +202,10 @@ p a {
     width: 40%;
   }
 
-  .topStrip {
-    display: none;
-  }
-
   .content {
-    padding: 0px 50px;
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
   }

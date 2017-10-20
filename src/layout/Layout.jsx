@@ -1,12 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar.jsx';
+import Navbar, { NavbarResponsive } from './Navbar.jsx';
 import RightStrip from './RightStrip.jsx';
-import TopStrip from './TopStrip.jsx';
 
 const Layout = ({children}) => (
   <div className="layout">
     <Navbar />
-    <TopStrip />
+    <NavbarResponsive />
     <div className="content">
       <div className="contentLeft">
         {children}
