@@ -23,12 +23,12 @@ const Services = () => (
 
     <p>If you need a new Angular 1 or 2 application created, we can help you. If you need to manage an existing Angular 1 project, or migrate it to Angular 2, we would love to speak with you and understand your needs.</p>
 
-    <h2>Node.js, MERN and MEAN stack development</h2>
+    <h2>Node.js, MERN and MEAN Stack</h2>
     <p>If you plan on building a scalable, modern web app then you're probably considering using Node.js. Node offers an excellent complementary server-side framework for any HTML5 project. The advantage of having a single language across your entire stack cannot be understated.</p>
 
     <p>Our full stack developers can take on any scale of development work for the Node.js platform, ranging from simple CRUD applications that support complex frontends, to massively complex, high-performance backend systems that run with multiple cooperating microservices.</p>
 
-    <h2>Java & Ruby on Rails development</h2>
+    <h2>Java & Ruby on Rails</h2>
 
     <p>In addition to Node.js, we can also help you maintain your Ruby on Rails and Java projects. Our team has worked on multiple complex Ruby on Rails and Java projects over the years, and would be glad to support your existing project. We will also take on development projects for brand new Rails and Java applications.</p>
   </Page>

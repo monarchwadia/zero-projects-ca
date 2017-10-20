@@ -5,9 +5,9 @@ import RightStrip from './RightStrip.jsx';
 
 const Layout = ({children}) => (
   <div className="layout">
+    <Navbar />
     <div>
       <Content>
-        <Navbar />
         {children}
       </Content>
     </div>
