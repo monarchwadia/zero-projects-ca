@@ -4,6 +4,18 @@ import routes from '../routes.jsx';
 
 const Navbar = () => (
   <div className="navbar">
+    {renderNav(routes)}
+  </div>
+)
+
+const NavbarResponsive = () => (
+  <div className="navbar-responsive">
+    {renderNav(routes)}
+  </div>
+)
+
+function renderNav(routes) {
+  return (
     <ul className="tabs header-font no-select">
       {
         routes
@@ -20,7 +32,9 @@ const Navbar = () => (
 
       }
     </ul>
-  </div>
-)
+  );
+}
 
 export default Navbar;
+export { Navbar, NavbarResponsive };
+// export NavbarResponsive as NavbarResponsive;

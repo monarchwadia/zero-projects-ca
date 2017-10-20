@@ -1,11 +1,11 @@
 const React = require('react');
 
 const ZeroProjectsLogo = ({dimensions}) => {
-  const dim = dimensions || "150px";
+  const dim = "100%";
 
   
   return (
-    <div style={{width: dim, height: dim, display: "inline-block" }}>
+    <div className="logo">
       <svg 
         viewBox="0 0 3100 3100"
         xmlns="http://www.w3.org/2000/svg" 
