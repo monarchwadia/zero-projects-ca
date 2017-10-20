@@ -1,24 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import routes from '../routes.jsx';
 
 const Navbar = () => (
   <div className="navbar">
     <ul className="tabs header-font no-select">
       {
-        [
-          ["Home",      "/"],
-          ["Services",      "/services"],
-          ["Sectors",      "/sectors"],
-          ["Technologies",  "/technologies"],
-          ["Contact",       "/contact"]
-        ]
-        .map(r => {
-          const label = r[0];
-          const route = r[1];
-
-          return <NavLink exact 
-            key={route}
-            to={route}  
+        routes
+          .filter(({showInNavbar}) => showInNavbar !== false)
+          .map(({path, label, component, exact, showInNavbar}) => {
+          return <NavLink exact
+            key={path}
+            to={path}  
             activeClassName="active"
           >
             <li>{label}</li>

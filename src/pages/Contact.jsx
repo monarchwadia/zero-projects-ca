@@ -14,16 +14,15 @@ const Consulting = () => (
 
     <h2>Location</h2>
 
-    <p>We're located at:
+    <p>We're located at:</p>
 
       <address>
         Suite 400 <br/>
         73 Bathurst St. <br/>
         Toronto, ON <br/>
         M5V 2P6 <br/>
-      </address>
+      </address><br/>
 
-    </p>
 
     <div className="mapbox">
     <a href="https://www.google.com/maps/dir//73+Bathurst+Street,+Toronto/"><img src="https://maps.googleapis.com/maps/api/staticmap?autoscale=1&size=640x640&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C73+Bathurst+Street,+Toronto" alt="Google Map of 73 Bathurst Street, Toronto" /></a>
