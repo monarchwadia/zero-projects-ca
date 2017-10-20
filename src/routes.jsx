@@ -7,10 +7,10 @@ import Email from './pages/Email.jsx';
 
 const Routes = [
   { path: "/",             label: "Home",          component: Home,        exact: true },
-  { path: "/technologies", label: "Technologies",  component: Technologies },
   { path: "/services",     label: "Services",      component: Services },
-  { path: "/contact",      label: "Contact",       component: Contact },
+  { path: "/technologies", label: "Technologies",  component: Technologies },
   { path: "/sectors",      label: "Sectors",       component: Sectors },
+  { path: "/contact",      label: "Contact",       component: Contact },
   { path: "/email",        label: "Email",         component: Email,       showInNavbar: false }
 ]
 
