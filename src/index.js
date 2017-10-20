@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 import { homepage } from '../package.json'
 
 import './index.css';
@@ -10,7 +10,7 @@ import Routes from './routes.jsx';
 const basename = (process.env.NODE_ENV === "development") ? "/" : homepage;
 
 const Root = () => (
-  <BrowserRouter basename={basename}>
+  <HashRouter basename={basename}>
     <Layout>
       {
         Routes.map(route => (
@@ -24,7 +24,7 @@ const Root = () => (
         ))
       }
     </Layout>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 ReactDOM.render(<Root />, document.getElementById('root'));
