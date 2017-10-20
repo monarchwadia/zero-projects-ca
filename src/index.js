@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
+import { homepage } from '../package.json'
 
 import './index.css';
 import Layout from './layout/Layout.jsx';
 import Routes from './routes.jsx';
 
+const basename = (process.env.NODE_ENV === "development") ? "/" : homepage;
 
 const Root = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <Layout>
       {
         Routes.map(route => (
