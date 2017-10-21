@@ -12,7 +12,7 @@ const Navbar = () => (
 class NavbarResponsive extends Component {
   constructor(props) {
     super(props);
-    this.state = { isOpen: true }
+    this.state = { isOpen: false }
   }
 
   toggleDrawer(e) {

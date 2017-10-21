@@ -1,20 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 import Navbar, { NavbarResponsive } from './Navbar.jsx';
 import RightStrip from './RightStrip.jsx';
 
-const Layout = ({children}) => (
-  <div className="layout">
-    <Navbar />
-    <NavbarResponsive />
-    <div className="content">
-      <div className="contentLeft">
-        {children}
-      </div>
-      <div className="contentRight">
-        <RightStrip />
-      </div>
-    </div>
-  </div>
-)
+class Layout extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
+  }
 
-export default Layout;
+  render() {
+    return (
+      <div className="layout">
+        <Navbar />
+        <NavbarResponsive />
+        <div className="content">
+          <div className="contentLeft">
+            {this.props.children}
+          </div>
+          <div className="contentRight">
+            <RightStrip />
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default withRouter(Layout);
