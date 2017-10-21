@@ -5,6 +5,7 @@ import { HashRouter, Route } from 'react-router-dom'
 import './index.css';
 import Layout from './layout/Layout.jsx';
 import Routes from './routes.jsx';
+import printConsoleMessage from './printConsoleMessage';
 
 const Root = () => (
   <HashRouter>
@@ -25,3 +26,4 @@ const Root = () => (
 )
 
 ReactDOM.render(<Root />, document.getElementById('root'));
+printConsoleMessage();

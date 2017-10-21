@@ -23,6 +23,11 @@ class Layout extends Component {
             <RightStrip />
           </div>
         </div>
+        <div className="bottom-bar"> 
+          <div className="copyright-notice">
+            Copyright © { 1900 + (new Date()).getYear() } Zero Projects Inc
+          </div>
+        </div>
       </div>
     );
   }

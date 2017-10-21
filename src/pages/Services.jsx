@@ -4,9 +4,9 @@ import Page from '../components/Page.jsx';
 
 const Services = () => (
   <Page>
-    <h1>Our services.</h1>
+    <h1>Services from concept to launch.</h1>
 
-    <p>Our project managers have years of experience in delivering quality software on schedule and within budget. We communicate continuously with you throughout the process of building out your project, allowing us to make changes and pivot as with minimal delay. We work closely with you to ensure that your project is successful.</p>
+    <p>We can take your raw idea and turn it into a successfully launched product. Our project managers have years of experience in delivering quality software on schedule and within budget. We communicate continuously with you throughout the process of building out your project, allowing us to make changes and pivot as with minimal delay. We work closely with you to ensure that your project is successful.</p>
 
     <p><Link to="/contact">Contact us now to get in touch with an expert</Link></p>
 
@@ -14,6 +14,7 @@ const Services = () => (
     <p>
       Our software developers have produced applications in multiple paradigms, domains, languages, technology stacks, architectures and frameworks. We preserve best practices and use appropriate design patterns, even when under pressure to deliver rapidly. We understand that best practices exist to speed up development in the long run.
     </p>
+
 
     <h2>Captivating UX/UI Design</h2>
     <p>
