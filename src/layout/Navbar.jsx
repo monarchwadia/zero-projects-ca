@@ -12,7 +12,7 @@ const Navbar = () => (
 class NavbarResponsive extends Component {
   constructor(props) {
     super(props);
-    this.state = { isOpen: false }
+    this.state = { isOpen: true }
   }
 
   toggleDrawer(e) {
@@ -20,9 +20,14 @@ class NavbarResponsive extends Component {
   }
 
   render() { return (
-    <div className="navbar-responsive no-select header-font" onClick={this.toggleDrawer.bind(this)}>
-      <div className="menu-button"><ZeroProjectsLogo fill="#ffffff"/></div>
-      { this.state.isOpen && renderNav(routes, 'navbar-responsive') }
+    <div className="navbar navbar-responsive no-select header-font">
+      <div className="navbar-responsive-top">
+        <div className="menu-button" onClick={this.toggleDrawer.bind(this)}>☰</div>
+        <ZeroProjectsLogo fill="#ffffff"/>
+      </div>
+      <div className="navbar-responsive-bottom">
+        { this.state.isOpen && renderNav(routes, 'navbar-responsive') }
+      </div>
     </div>
   )}
 }

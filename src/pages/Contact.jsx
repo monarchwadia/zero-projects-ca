@@ -1,6 +1,7 @@
 import React from 'react';
 import Page from '../components/Page.jsx';
 import {Link} from 'react-router-dom';
+import staticMap from '../images/staticmap.png'
 
 const Consulting = () => (
   <Page>
@@ -25,7 +26,9 @@ const Consulting = () => (
 
 
     <div className="mapbox">
-    <a href="https://www.google.com/maps/dir//73+Bathurst+Street,+Toronto/"><img src="https://maps.googleapis.com/maps/api/staticmap?autoscale=1&size=640x640&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C73+Bathurst+Street,+Toronto" alt="Google Map of 73 Bathurst Street, Toronto" /></a>
+    <a href="https://www.google.com/maps/dir//73+Bathurst+Street,+Toronto/">
+      <img src={staticMap} alt="Google Map of 73 Bathurst Street, Toronto" />
+      </a>
 
     </div>
   </Page>

@@ -44,12 +44,17 @@ p a {
 }
 
 .layout {
-  display: inline-block;
+  display: inline;
 }
 
 .mapbox {
   border: 5px solid black;
   display:inline-block;
+  width: 100%;
+}
+
+.mapbox img {
+  width: 100%;
 }
 
 .rightStrip .logo {
@@ -64,7 +69,6 @@ p a {
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 120px;
 }
 
 .contentLeft {
@@ -83,7 +87,7 @@ p a {
   width: 100%;
   background-color: black;
   color: white;
-  text-align: center;
+  /*text-align: center;*/
   padding-bottom: 25px;
 }
 
@@ -107,6 +111,61 @@ p a {
   color: red;
 }
 
+.navbar.navbar-responsive {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  height: 100px;
+  background-color: black;
+}
+
+.navbar.navbar-responsive .menu-button {
+  float: left;
+  line-height: 90px;
+  font-size: 50px;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color: black;
+}
+
+.navbar.navbar-responsive .logo {
+  width: 100px;
+  padding: 5px;
+  float: right;
+}
+
+.navbar.navbar-responsive .navbar-responsive-top,
+.navbar.navbar-responsive .navbar-responsive-bottom {
+  width: 100%;
+  background: inherit;
+}
+
+.navbar.navbar-responsive .navbar-responsive-top {
+  height: 100px;
+}
+
+.navbar-responsive .tabs {
+  display: inline-block;
+  padding: 0;
+}
+
+.navbar-responsive .tabs a {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+
+.navbar-responsive .tabs li {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  font-size: 2em;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+/*
 .navbar-responsive {
   position: fixed;
   top: 20px;
@@ -142,7 +201,7 @@ p a {
   float: left;
   text-align: left;
 }
-
+*/
 .no-select, .no-select * {
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -180,12 +239,14 @@ p a {
 
 /* Media Queries */
 @media only screen and (min-width: 1024px) { 
-  .navbar-responsive {
+  .navbar.navbar-responsive {
     display: none;
   }
   .navbar {
     display: inline-block;
     width: 100%; 
+    text-align: left;
+    padding-left: 50px;
   }
 
   * {
@@ -203,16 +264,10 @@ p a {
   }
 
   .content {
-    padding-top: 0;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .navbar {
-    text-align: left;
-    padding-left: 80px;
   }
 }
 
