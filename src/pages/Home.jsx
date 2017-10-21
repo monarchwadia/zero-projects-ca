@@ -25,7 +25,7 @@ const Consulting = () => (
     <h2>...that follow good old-fashioned principles.</h2>
 
     <p>
-      Our developers have a solid grounding in Java OOP design principles. Separation of concerns, the KISS principle, YAGNI, DRY, inheritance, polymorphism... they might be "old-fashioned", but they're still the best way to grow maintainable software projects, even today. Callbacks and functional programming only enhance those solid foundations.
+      Our developers have a solid grounding in Java OOP design principles. Separation of concerns, the KISS principle, YAGNI, DRY, SOLID principles... they might be "old-fashioned", but they're still the best way to grow maintainable software projects, even today. Javascript's event-driven and functional programming paradigms only enhance those solid foundations.
     </p>
 
     <p><Link to="/technologies">Read more about the technologies we work with</Link></p>
