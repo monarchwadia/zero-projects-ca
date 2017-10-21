@@ -165,43 +165,7 @@ p a {
   padding-bottom: 5px;
   padding-top: 5px;
 }
-/*
-.navbar-responsive {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  height: 125px;
-  width: 125px;
-  padding: 10px;
-  text-align: center;
-  background: rgba(0,0,0,0.9);
-  font-family: sans-serif;
-  font-weight: bolder;
-  color: white;
-  display: inline-block;
-}
 
-.navbar-responsive .tabs {
-  position: fixed;
-  top: 145px;
-  left: 20px;
-  line-height: 75px;
-  font-size: 2em;
-  background-color: inherit;
-  display: inline-block;
-  padding: 0px 10px;
-  width: 100%;
-  left: 0;
-}
-
-.navbar-responsive .tabs li {
-  display: inline;
-  width: 100%;
-  list-style-type: none;
-  float: left;
-  text-align: left;
-}
-*/
 .no-select, .no-select * {
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
