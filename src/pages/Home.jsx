@@ -2,14 +2,14 @@ import React from 'react';
 import Page from '../components/Page.jsx';
 import {Link} from 'react-router-dom';
 
-const Consulting = () => (
+const Home = () => (
   <Page>
     <h1>
-      Javascript Consultants.
+      JavaScript, full-stack development firm.
     </h1>
 
     <p>
-      Zero Projects is a consulting firm that helps make technology simple again. Business is hard -- technology doesn't have to be. Let us take care of your technology needs for you, so that you can focus on your business and your customers.
+      Zero Projects is a dev firm that helps make technology simple again. Business is hard -- technology doesn't have to be. Let us take care of your technology needs for you, so that you can focus on your business and your customers.
     </p>
 
 <p><Link to="/contact">Contact us now to get in touch with an expert</Link></p>
@@ -40,4 +40,4 @@ const Consulting = () => (
   </Page>
 )
 
-export default Consulting;
+export default Home;

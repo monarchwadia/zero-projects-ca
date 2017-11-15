@@ -3,7 +3,7 @@ import Page from '../components/Page.jsx';
 import {Link} from 'react-router-dom';
 import staticMap from '../images/staticmap.png'
 
-const Consulting = () => (
+const Contact = () => (
   <Page>
     <h1>Let's grab coffee.</h1>
     <p>Would you like to get in touch? We're all ears! You've crunched countless hours growing your business. Now let us help you grow your software project in a technical direction that's right for your business.</p>
@@ -34,4 +34,4 @@ const Consulting = () => (
   </Page>
 )
 
-export default Consulting;
+export default Contact;
