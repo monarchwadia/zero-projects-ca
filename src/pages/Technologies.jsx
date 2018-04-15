@@ -7,7 +7,7 @@ const Services = () => (
     <h1>Tech we work with.</h1>
 
     <p>
-      Javascript is only the beginning of what we do. We can work with your technology stack regardless of the language and framework it's written in, and we do consider demand for projects in more exotic languages such as Haskell and Erlang. Most of the business we do is in Javascript, but we also work with Java and Ruby on Rails.
+      Most of the work we do is in Javascript, Java, and Ruby on Rails, but we can probably work on your project regardless of the language and framework it's written in, and we do consider requests for projects built in in languages such as Go and Python. At the end of the day, it's worth considering that the success of a software project depends more on the people who work on it, rather than the language or framework it's built in. 
     </p>
 
     <p><Link to="/contact">Contact us now to get in touch with an expert</Link></p>

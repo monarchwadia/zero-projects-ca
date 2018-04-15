@@ -6,6 +6,8 @@ const Services = () => (
   <Page>
     <h1>Services from concept to launch.</h1>
 
+    <p>For our mentorship services, <Link to="/services">Click Here</Link>.</p>
+
     <p>We can take your raw idea and turn it into a successfully launched product. Our project managers have years of experience in delivering quality software on schedule and within budget. We communicate continuously with you throughout the process of building out your project, allowing us to make changes and pivot as with minimal delay. We work closely with you to ensure that your project is successful.</p>
 
     <p><Link to="/contact">Contact us now to get in touch with an expert</Link></p>
