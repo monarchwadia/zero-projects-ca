@@ -28,12 +28,12 @@ const Services = () => (
 
     <h2>Architecture & system design</h2>
     <p>
-      Javascript systems need particular attention when it comes to architecture because of the flexibility that the language affords. Our engineers have handled full-stack architecture and system design work for Fortune 500 companies with teams of more than 200 people. Whatever your needs are, we can take care of them. 
+      Software systems need particular attention when it comes to architecture. Our engineers have handled full-stack architecture and system design work for Fortune 500 companies with teams of more than 100 developers. Whatever your needs are, we can take care of them. 
     </p>
 
-    <h2>Angular 1 → Angular 2 Migrations</h2>
+    <h2>Angular 1 → Angular 2 / React Migrations</h2>
     <p>
-      Migrating Angular 1 projects to Angular 2 is not an easy task, but it can be done with minimum expenditure given expertise and knowledge. We can help your team migrate their codebase as well as their skillset over to Angular 2 with a combination of technical solutions and training.
+      Modernizing Angular 1 projects is not an easy task, but it can be done with minimum expenditure given expertise and knowledge. We can help your team migrate their codebase as well as their skillset over to the new project with a combination of technical solutions and training.
     </p>
 
   </Page>

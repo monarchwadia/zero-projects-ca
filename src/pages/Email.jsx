@@ -3,7 +3,7 @@ import Page from '../components/Page.jsx';
 
 const Services = () => (
   <Page>
-    <h1> Email </h1>
+    <h2> Get in touch. </h2>
 
     <p> Thanks for wanting to get in touch! We monitor our email inbox constantly. We'll get back to you really soon.</p>
 

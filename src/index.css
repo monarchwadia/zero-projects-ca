@@ -247,3 +247,12 @@ p a {
   margin-bottom: 25px;
   text-align: center;
 }
+
+ol, ul {
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+ol li, ul li {
+  /*font-style: italic;*/
+}
