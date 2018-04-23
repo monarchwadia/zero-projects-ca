@@ -1,7 +1,6 @@
 import React from 'react';
 import Page from '../components/Page.jsx';
 import {Link} from 'react-router-dom';
-import staticMap from '../images/staticmap.png'
 
 const Contact = () => (
   <Page>

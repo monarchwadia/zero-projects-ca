@@ -1,6 +1,7 @@
 import React from 'react';
 import Page from '../components/Page.jsx';
 import {Link} from 'react-router-dom';
+import YouTube from 'react-youtube';
 
 const Home = () => (
   <Page>
@@ -10,6 +11,24 @@ const Home = () => (
 
     <p>
       Business is hard -- web technology doesn't have to be. Let us take care of your SaaS and web projects for you, so that you can focus on your business and your customers.
+    </p>
+
+    <h2>Customer Testimonials</h2>
+
+    <p className="quote">
+      I personally was able to benefit quite a bit from interacting with monarch and learning how to manage the team better by listening to his feedback. Our development speed increased about <span className="red">150%, about 2.5 times</span> faster. 
+      <p className="red">Frank Meng</p>
+      <p>CTO & Founder, HiredHippo</p>
+    </p>
+
+    <YouTube 
+      videoId="NpAEmKwiBSk"
+    />
+
+    <p className="quote">
+      We really needed someone who could foresee potential risks and issues that might arise. We're in the business of information, and sometimes you're operating in a space where you don't know what you don't know, so it's very valuable to have someone who can bring in additional experience.
+      <p className="red">Adam Gellert</p>
+      <p>CEO & Co-Founder, HiredHippo</p>
     </p>
 
     <h2>Software development services</h2>

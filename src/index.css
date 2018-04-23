@@ -10,6 +10,8 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,6 +111,14 @@ p a {
 
 .navbar .tabs a:hover, a.active {
   color: red;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
 }
 
 .navbar.navbar-responsive {
@@ -253,6 +263,15 @@ ol, ul {
   margin-bottom: 25px;
 }
 
-ol li, ul li {
-  /*font-style: italic;*/
+.quote {
+  font-size: 1em;
+  text-align: left;
+  border-left: 5px solid red;
+  padding-left: 20px;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.quote * {
+  margin: 0;
 }

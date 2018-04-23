@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import React from 'react';
 import Page from '../components/Page.jsx';
+import YouTube from 'react-youtube';
 
 const Services = () => (
   <Page>
@@ -8,6 +9,26 @@ const Services = () => (
       <h2>We help companies get better at delivering software</h2>
 
       <p>For our development services, <Link to="/services">Click Here</Link>.</p>
+
+      <div className="quote">
+        <p>It was good having someone who knew what patterns looked like in the wild, so that I could temper some of my more academic or theoretical instincts and bring it down to a level of "this is industry standard, and for these reasons".</p>
+        <p className="red">John Goff</p>
+        <p>Junior Frontend Developer, HiredHippo</p>
+        <p>Bootcamp Alumnus, Lighthouse Labs</p>
+      </div>
+
+      <YouTube 
+        videoId="XMaYpZ7l2Yg"
+      />
+
+      <div className="quote">
+        <p>Having someone who is experienced and senior there to walk over difficult concepts was super important for me and the company's growth overall</p>
+        <p className="red">Kara Byrne</p>
+        <p>Junior Frontend Developer, HiredHippo</p>
+        <p>Bootcamp Alumnus, Brainstation</p>
+      </div>
+
+      <h3> We work with your existing developers </h3>
 
       <p>Using a combination of <b>technical guidance, architectural mentorship, and process improvement</b>, we can help your tech team attain an incredible speed of delivery and a substanially improved ROI per development dollar spent, while minimizing bugs to near-negligible levels.</p>
 
