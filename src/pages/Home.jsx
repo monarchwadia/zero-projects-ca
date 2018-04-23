@@ -15,21 +15,21 @@ const Home = () => (
 
     <h2>Customer Testimonials</h2>
 
-    <p className="quote">
+    <div className="quote">
       I personally was able to benefit quite a bit from interacting with monarch and learning how to manage the team better by listening to his feedback. Our development speed increased about <span className="red">150%, about 2.5 times</span> faster. 
       <p className="red">Frank Meng</p>
       <p>CTO & Founder, HiredHippo</p>
-    </p>
+    </div>
 
     <YouTube 
       videoId="NpAEmKwiBSk"
     />
 
-    <p className="quote">
+    <div className="quote">
       We really needed someone who could foresee potential risks and issues that might arise. We're in the business of information, and sometimes you're operating in a space where you don't know what you don't know, so it's very valuable to have someone who can bring in additional experience.
       <p className="red">Adam Gellert</p>
       <p>CEO & Co-Founder, HiredHippo</p>
-    </p>
+    </div>
 
     <h2>Software development services</h2>
 

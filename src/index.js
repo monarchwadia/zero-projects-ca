@@ -6,6 +6,9 @@ import './index.css';
 import Layout from './layout/Layout.jsx';
 import Routes from './routes.jsx';
 import printConsoleMessage from './printConsoleMessage';
+import { unregister } from './registerServiceWorker.js';
+
+unregister();
 
 const Root = () => (
   <HashRouter>
