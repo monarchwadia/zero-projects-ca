@@ -9,6 +9,9 @@ For an easier development flow, it's recommended to install `hexo-cli` by runnin
 ### Setup
 To setup the environment, clone the repository and run `yarn install` within the root.
 
+### Development
+For easier blog development, run `hexo server` within the `/blog` folder to host & watch the blog files.
+
 ### Commands
 ##### $ yarn build
 Build the Hexo blog which will output all the static files needed for the blog to `/public`
