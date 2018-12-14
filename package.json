@@ -1,0 +1,24 @@
+{
+  "name": "zero-projects-website",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "serve": "yarn build && cd ./public && serve .",
+    "build": "cd ./blog && hexo generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monarchwadia/zero-projects-ca.git"
+  },
+  "author": "Zero Projects, Inc",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/monarchwadia/zero-projects-ca/issues"
+  },
+  "homepage": "https://github.com/monarchwadia/zero-projects-ca#readme",
+  "devDependencies": {
+    "hexo-cli": "^1.1.0",
+    "serve": "^10.1.1"
+  }
+}

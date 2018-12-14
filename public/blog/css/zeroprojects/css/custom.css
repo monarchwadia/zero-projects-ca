@@ -1,0 +1,64 @@
+/* Header banner for home page */
+.saas-banner, .bg-banner {
+	background: navy;
+	color: white;
+}
+
+.bg-banner img, 
+.bg-banner a.try-btn,
+.saas-banner a.try-btn {
+	border: white;
+	background-color: white;
+	color: black;
+	box-shadow: none;
+}
+
+.list-inner-container .explore-btn {
+	background-color: navy;
+	border: navy;
+}
+
+.saas-form-contact textarea::-webkit-input-placeholder,
+.saas-form-contact textarea:-moz-placeholder,
+.saas-form-contact textarea::-moz-placeholder,
+.saas-form-contact textarea:-ms-input-placeholder,
+.saas-form-contact input::placeholder {
+	color: red !important;
+}
+
+/*::-webkit-input-placeholder { 
+  color: #bbb;
+}
+:-ms-input-placeholder { 
+  color: #bbb;
+}
+::-moz-placeholder {
+  color: #bbb;
+}
+:-moz-placeholder { 
+  color: #bbb;
+}*/
+
+.ericsson-logo {
+ 	padding: 70px;
+ 	width: 450px;
+}
+.centro-logo {
+	padding: 125px 50px;
+}
+.wirl-logo {
+	padding: 120px 25px;
+}
+.hiredhippo-logo {
+
+}
+
+.explore-btn {
+	margin-bottom: 20px;
+	display: inline-block;
+	padding: 30px !important;
+}
+
+.screen_list.aos-box {
+	padding-bottom: 60px;
+}
