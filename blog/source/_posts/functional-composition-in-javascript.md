@@ -1,5 +1,5 @@
 ---
-title: Functional Composition in JavaScript
+title: Object Inheritance Using Functional Composition in JavaScript
 ---
 
 ### Picture this...
@@ -61,7 +61,7 @@ All was going well until your manager had a demand for you: a Dog-Cat that can h
 
 ### Enter: Functional Composition
 
-Functional composition is an alternative to classical inheritance and can be very powerful when used properly. The idea is that instead of designing our behaviour around what it belongs to, we design and group it around what it does. That being said, instead of defining a basis to extend for our Cat and Dog classes, we will define the behaviour of both.
+Object inheritance is an alternative to classical inheritance and can be very powerful when used properly. The idea is that instead of designing our behaviour around what it belongs to, we design and group it around what it does. We then piece the behaviour together using functional composition to compose our object. That being said, instead of defining a basis to extend for our Cat and Dog classes, we will define the behaviour of both.
 
 ```javascript
 const canEat = state => ({
@@ -127,9 +127,11 @@ dogCat.bark(); // Woof!
 
 It's that easy! In fact, we could create many different variations of animals using the same three functions we have defined without having any copied code.
 
+In addition to this, we can version our models easily without making a direct change to any animal itself. If we wanted a Dog that `canBark` and another Dog that can `canDeeplyBark` we can easily make another function that knows how to deal with the state of the dog to give it the behaviour of a deep bark.
+
 ### Conclusion
 
-Functional composition provides us with three major favours:
+Object inheritance using functional composition provides us with three major favours:
 
 - Separate state from behaviour
 - Separate behaviour from identity
