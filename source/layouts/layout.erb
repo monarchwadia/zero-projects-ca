@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>
+        <%= current_page.data.title || data.site.title %>
+    </title>
+
+    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "plugins" %>
+    <%= stylesheet_link_tag "styles" %>
+
+    <%= javascript_include_tag "site" %>
+</head>
+
+<body>
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start main-wrapper section -->
+    <div class="main-wrapper">
+
+        <!-- start header section -->
+        <header class="position-absolute width-100 sm-position-relative">
+            <div class="navbar-default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light no-padding">
+
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a href="javascript:void(0)" class="navbar-brand"><img id="logo" src="images/logos/logo.png"
+                                                alt="logo"></a>
+                                        <!-- end logo -->
+                                    </div>
+
+                                    <div class="navbar-toggler"></div>
+
+                                    <!-- start menu Area -->
+                                    <ul class="navbar-nav ml-auto" id="nav">
+                                        <li><a href="javascript:void(0)">Services</a>
+                                            <ul>
+                                                <li><a href="services.html">Service 1</a></li>
+                                                <li><a href="services.html">Service 2</a></li>
+                                                <li><a href="services.html">Service 3</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void(0)">Case Studies</a>
+                                            <ul>
+                                                <li><a href="casestudies.html">Case Study 1</a></li>
+                                                <li><a href="casestudies.html">Case Study 2</a></li>
+                                                <li><a href="casestudies.html">Case Study 3</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void(0)">Insights</a>
+                                            <ul>
+                                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                <li><a href="blog-default.html">Blog Default</a></li>
+                                                <li><a href="blog-post.html">Blog Post</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- end menu Area -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <%= yield %>
+
+        <!-- all js include start -->
+
+        <!-- jQuery -->
+        <%= javascript_include_tag "jquery.min" %>
+
+        <!-- modernizr js -->
+        <%= javascript_include_tag "modernizr" %>
+
+        <!-- bootstrap -->
+        <%= javascript_include_tag "bootstrap.min" %>
+
+        <!-- scrollIt -->
+        <%= javascript_include_tag "scrollIt.min" %>
+
+        <!-- navigation -->
+        <%= javascript_include_tag "nav-menu" %>
+
+        <!-- tab -->
+        <%= javascript_include_tag "easy.responsive.tabs" %>
+
+        <!-- owl carousel -->
+        <%= javascript_include_tag "owl.carousel" %>
+
+        <!-- jquery.counterup.min -->
+        <%= javascript_include_tag "jquery.counterup.min" %>
+
+        <!-- stellar js -->
+        <%= javascript_include_tag "jquery.stellar.min" %>
+
+        <!-- waypoints js -->
+        <%= javascript_include_tag "waypoints.min" %>
+
+        <!-- tab js -->
+        <%= javascript_include_tag "tabs.min" %>
+
+        <!-- countdown js -->
+        <%= javascript_include_tag "countdown" %>
+
+        <!-- jquery.magnific-popup js -->
+        <%= javascript_include_tag "jquery.magnific-popup.min" %>
+
+        <!-- isotope.pkgd.min js -->
+        <%= javascript_include_tag "isotope.pkgd.min" %>
+
+        <!-- wow js -->
+        <%= javascript_include_tag "wow" %>
+
+        <!-- map js -->
+        <%= javascript_include_tag "map" %>
+
+        <!-- custom scripts -->
+        <%= javascript_include_tag "main" %>
+
+        <!-- contact form scripts -->
+        <%= javascript_include_tag "mailform/jquery.form.min" %>
+        <%= javascript_include_tag "mailform/jquery.rd-mailform.min.c" %>
+
+        <!-- all js include end -->
+</body>
+
+</html>

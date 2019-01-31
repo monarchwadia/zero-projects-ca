@@ -1,0 +1,26 @@
+{
+  "splash": {
+    "title": "We empower your people.",
+    "body": "Zero is a boutique firm that ships hard-hitting custom software"
+  },
+  "who": {
+    "title": "We're a small Canadian team delivering big results",
+    "body": "We're a tightly-knit team that delivers matchless agility and attention-to-detail to projects of all sizes. Choosing Zero for your project means choosing creativity, quality and speedy delivery.",
+    "buttonExplanation": "See what we've built for others who trusted us in and around the GTA."
+  },
+  "how": {
+    "title": "Our success is thanks to experienced talent and tech-heavy leadership",
+    "body": "We focus on the two main drivers of success:",
+    "points": [
+      "Our people, who have worked hard for years to learn how to shape technology",
+      "Our processes, built on our talents' experience and insight."
+    ],
+    "buttonExplanation": "Read what our talent has to say about technology."
+  },
+  "what": {
+    "title": "We offer JavaScript expertise with a focus on the frontend",
+    "body": "We're proudly a part of the amazing full stack Javascript community. Node.js, React, Vue and Angular have revolutionized how products are built, and we're no strangers to any of them.",
+    "logos": [],
+    "buttonExplanation": "See what we can do for your company."
+  }
+}
