@@ -3284,13 +3284,14 @@ footer {
     margin-bottom: 30px;
     line-height: 1;
     position: relative;
+    color: #f5fafe;
 
     &:after {
       content: '';
       display: block;
       width: 70px;
       height: 2px;
-      background: $PrimaryColor;
+      background: #f5fafe;
       margin: 12px auto 0 auto;
     }
   }
@@ -3314,7 +3315,7 @@ h3.footer-title-style {
   color: #939393;
 
   span {
-    color: $PrimaryColor;
+    color: #939393;
     font-size: 15px;
     font-weight: 400;
   }
@@ -3325,7 +3326,7 @@ h3.footer-title-style {
 
   li {
     list-style-type: none;
-    color: #232323;
+    color: #939393;
     padding: 6px 0;
 
     &:first-child {
@@ -3338,7 +3339,7 @@ h3.footer-title-style {
         font-weight: 700;
         vertical-align: bottom;
         font-family: Font Awesome\ 5 Free;
-        color: #232323;
+        color: #939393;
         padding-right: 8px;
         -webkit-transition-duration: .3s;
         transition-duration: .3s;
@@ -3346,13 +3347,13 @@ h3.footer-title-style {
 
       font-size: 15px;
       font-weight: 400;
-      color: #232323;
+      color: #939393;
 
       &:hover {
-        color: $PrimaryColor;
+        color: #f5fafe;
 
         &:before {
-          color: $PrimaryColor;
+          color: #f5fafe;
         }
       }
     }
@@ -3364,7 +3365,7 @@ h3.footer-title-style {
 
   li {
     display: inline-block;
-    border: 1px solid $PrimaryColor;
+    border: 1px solid #f5fafe;
     border-radius: 50%;
     color: #fff;
     margin-right: 10px;
@@ -3373,7 +3374,7 @@ h3.footer-title-style {
     transition-duration: 0.3s;
 
     a {
-      color: $PrimaryColor;
+      color: #f5fafe;
       display: block;
       font-size: 15px;
       height: 35px;
@@ -3400,7 +3401,7 @@ footer h3.footer-title-style2 {
 h3.footer-title-style2:after {
   width: 100%;
   height: 1px;
-  background: $PrimaryColor;
+  background: #f5fafe;
   margin-top: 15px;
 }
 

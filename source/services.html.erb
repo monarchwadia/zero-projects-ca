@@ -1,0 +1,85 @@
+<!-- start page title section -->
+<section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="/images/banner/bg9.jpg">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1><%= data.services.title %></h1>
+      </div>
+      <div class="col-md-12">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="javascript:void(0)"><%= data.services.title %></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- end page title section -->
+
+<!-- start service section -->
+<section class="bg-light-gray">
+  <div class="container">
+
+    <div class="row">
+      <% data.services.list.each do |service| %>
+      <div class="col-lg-4 col-md-12 margin-30px-bottom sm-margin-20px-bottom">
+        <div class="services-block padding-45px-tb padding-25px-lr sm-padding-35px-tb sm-padding-20px-lr xs-padding-30px-tb xs-padding-15px-lr last-paragraph-no-margin wow fadeInUp"
+          data-wow-delay=".2s">
+          <div class="title-box margin-25px-bottom sm-margin-15px-bottom">
+            <i class="fas <%= service.icon %> text-theme-color"></i>
+            <div class="box-circle-large"></div>
+            <div class="box-circle-small"></div>
+          </div>
+          <h3 class="margin-10px-bottom font-size22 md-font-size20 xs-font-size18"><%= service.name %></h3>
+          <p class="font-size16 line-height-28 sm-font-size14 sm-line-height-24"><%= service.description %></p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</section>
+<!-- end service section -->
+
+<!-- start technologies section -->
+<div class="section-clients" style="background-color: #f3f3f3">
+  <div class="container">
+    <div class="owl-carousel owl-theme clients" id="clients">
+      <% data.services.technologies.each do |technology| %>
+      <div class="item" style="text-align: center"><img style="width: 100px !important" alt="<%= technology.name %>"
+          src="<%= technology.image.color %>"></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<!-- end technologies section -->
+
+<!-- start about section -->
+<section>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-7 col-md-12 sm-margin-50px-bottom xs-margin-30px-bottom sm-text-center">
+        <img src="/images/content/about.png" alt="" />
+      </div>
+
+      <div class="col-lg-5 col-md-12">
+
+        <div class="padding-50px-left sm-no-padding">
+          <h3 class="sm-margin-lr-auto xs-width-100">About Crysta</h3>
+          <h4 class="font-size18 xs-font-size16 font-weight-500">Powerful tool for your customer to help user find
+            solution for build something great.</h4>
+          <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            officia deserunt mollit anim id est laborum. Cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum
+            Cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="javascript:void(0)" class="butn margin-10px-top">Join Our Team</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about section -->

@@ -1,3 +1,8 @@
 {
-  "title": "Zero Projects"
+  "title": "Zero Projects",
+  "footer": {
+    "description": "Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequ magni dolores eos qui ratione voluptatem.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get In Touch"
+  }
 }

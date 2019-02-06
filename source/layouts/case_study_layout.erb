@@ -1,0 +1,65 @@
+<% wrap_layout :layout do %>
+
+<!-- start page title section -->
+<section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="/images/banner/bg9.jpg">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          <%= current_article.title %>
+        </h1>
+      </div>
+      <div class="col-md-12">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="javascript:void(0)">
+              <%= current_article.title %></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- end page title section -->
+
+<!-- start blog post section -->
+<section class="blogs">
+  <div class="container">
+    <div class="row justify-content-md-center">
+
+      <!--  start blog center-->
+      <div class="col-lg-9 col-md-12 sm-margin-50px-bottom">
+        <div class="posts">
+          <!--  start post-->
+          <div class="post">
+            <div class="post-img">
+              <a href="javascript:void(0);" class="width-100">
+                <img src="<%= current_article.data.image %>" alt="">
+              </a>
+            </div>
+            <div class="content" style="padding: 40px 0px; background-color: #fff">
+              <div class="post-meta">
+                <div class="post-title">
+                  <h5>
+                    <%= current_article.title %>
+                  </h5>
+                </div>
+              </div>
+              <div class="post-cont">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+          <!--  end post-->
+        </div>
+      </div>
+      <!--  end blog center-->
+
+    </div>
+  </div>
+</section>
+<!-- end blog post section -->
+
+<% end %>

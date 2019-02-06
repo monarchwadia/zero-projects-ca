@@ -1,0 +1,93 @@
+---
+pageable: true
+per_page: 5
+blog: insights
+---
+
+<!-- start page title section -->
+<section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="/images/banner/bg9.jpg">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1><%= data.blog.title %></h1>
+      </div>
+      <div class="col-md-12">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="javascript:void(0)"><%= data.blog.title %></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- end page title section -->
+
+<!-- start blog list section -->
+<section>
+  <div class="container">
+    <div class="row justify-content-md-center">
+
+      <!--  start blog center-->
+      <div class="col-lg-9 col-md-12 sm-margin-50px-bottom">
+      
+        <% page_articles.each_with_index do |article, i| %>
+        <div class=blog-list-simple>
+          <div class="row">
+            <div class="col-md-12 margin-20px-bottom">
+                <div class="blog-list-simple-img"><img alt="img" src="<%= article.data.image %>"></div>
+            </div>
+            <div class="col-md-12">
+              <div class="blog-list-simple-text">
+                <% if article.data.category %>
+                <span><%= article.data.category %></span>
+                <% end %>
+                <h4><%= article.title %></h4>
+                <ul class="meta">
+                  <li>
+                    <a href="javascript:void(0);">
+                      <i aria-hidden="true" class="fa fa-user"></i> <%= article.data.author %>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <i aria-hidden="true" class="fas fa-calendar-alt"></i> <%= article.date.strftime('%b %e') %>
+                    </a>
+                  </li>
+                </ul>
+                <%= article.summary(250) %>
+                <div class="text-left margin-10px-top">
+                  <%= link_to '<span>Read More</span>'.html_safe, article, :class => 'butn small' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+
+        <!-- start pager  -->
+        <% if paginate && num_pages > 1 %>
+        <div class="no-margin">
+          <div class="pagination text-small text-uppercase text-extra-dark-gray">
+            <ul class="no-margin">
+              <% if prev_page %>
+              <li><a href="<%= prev_page %>"><i class="fas fa-long-arrow-alt-left margin-5px-right xs-display-none"></i>Prev</a></li>
+              <% end %>
+              <% if next_page %>
+              <li><a href="<%= next_page %>">Next <i class="fas fa-long-arrow-alt-right margin-5px-left xs-display-none"></i></a></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <% end %>
+        <!-- end pager -->
+
+      </div>
+      <!--  end blog center-->
+
+    </div>
+
+  </div>
+</section>
+<!-- end blog list section -->

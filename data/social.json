@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "icon": "fa-facebook-f",
+      "name": "Facebook",
+      "url": "https://facebook.com/zeroprojects"
+    },
+    {
+      "icon": "fa-twitter",
+      "name": "Twitter",
+      "url": "https://twitter.com/zeroprojects"
+    }
+  ]
+}

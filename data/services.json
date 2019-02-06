@@ -1,0 +1,102 @@
+{
+  "title": "Services",
+  "list": [
+    {
+      "name": "Frontend",
+      "description": "We are a leading company in front-end development.",
+      "icon": "fa-address-card",
+      "samples": [
+        {
+          "name": "React",
+          "links": []
+        },
+        {
+          "name": "Vue.js",
+          "links": []
+        },
+        {
+          "name": "Angular",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Full Stack",
+      "description": "We are a leading company in full stack development.",
+      "icon": "fa-cog",
+      "samples": [
+        {
+          "name": "Microsites",
+          "links": []
+        },
+        {
+          "name": "Node.js",
+          "links": []
+        },
+        {
+          "name": "Architecture",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Open Source",
+      "description": "We are a leading company in open source development.",
+      "icon": "fa-users",
+      "samples": [
+        {
+          "name": "Alpine",
+          "links": []
+        },
+        {
+          "name": "SDK & Library Development",
+          "links": []
+        }
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Node.js",
+      "image": {
+        "color": "/images/technologies/nodejs-color.png",
+        "gray": "/images/technologies/nodejs-gray.png"
+      }
+    },
+    {
+      "name": "JavaScript",
+      "image": {
+        "color": "/images/technologies/js-color.png",
+        "gray": "/images/technologies/js-gray.png"
+      }
+    },
+    {
+      "name": "TypeScript",
+      "image": {
+        "color": "/images/technologies/ts-color.png",
+        "gray": "/images/technologies/ts-gray.png"
+      }
+    },
+    {
+      "name": "React",
+      "image": {
+        "color": "/images/technologies/react-color.png",
+        "gray": "/images/technologies/react-gray.png"
+      }
+    },
+    {
+      "name": "Angular",
+      "image": {
+        "color": "/images/technologies/angular-color.png",
+        "gray": "/images/technologies/angular-gray.png"
+      }
+    },
+    {
+      "name": "Vue.js",
+      "image": {
+        "color": "/images/technologies/vue-color.png",
+        "gray": "/images/technologies/vue-gray.png"
+      }
+    }
+  ]
+}
