@@ -1,7 +1,11 @@
 {
   "splash": {
     "title": "We empower your people.",
-    "body": "Zero is a boutique firm that ships hard-hitting custom software."
+    "body": "Zero is a boutique firm that ships hard-hitting custom software.",
+    "button": {
+      "text": "Explore our projects",
+      "link": "/work"
+    }
   },
   "sections": [
     {
@@ -11,7 +15,7 @@
       "buttons": [
         {
           "text": "Case Studies",
-          "link": "/work.html"
+          "link": "/work"
         }
       ]
     },
@@ -21,7 +25,7 @@
       "buttons": [
         {
           "text": "Insights",
-          "link": "/insights.html"
+          "link": "/insights"
         }
       ]
     },
@@ -31,7 +35,7 @@
       "buttons": [
         {
           "text": "Services",
-          "link": "/services.html"
+          "link": "/services"
         }
       ]
     }

@@ -16,16 +16,12 @@
         05. Scroll To Top
         06. Wow animation - on scroll
         07. Parallax
-        08. Video
         09. Resize function
         10. FullScreenHeight function
         11. ScreenFixedHeight function
         12. FullScreenHeight and screenHeight with resize function
         13. Sliders
         14. Tabs
-        15. CountUp
-        16. Countdown
-        17. Isotop
         
         
     ---------------------------------- */    
@@ -46,7 +42,7 @@
           scrollTime: 600,          // how long (in ms) the animation takes
           activeClass: 'active',    // class given to the active nav element
           onPageChange: null,       // function(pageIndex) that is called when page is changed
-          topOffset: -70            // offste (in px) for fixed top navigation
+          topOffset: -70            // offset (in px) for fixed top navigation
         });
 
         /*------------------------------------
@@ -127,15 +123,6 @@
             if ($(this).attr("data-background")) {
                 $(this).css("background-image", "url(" + $(this).data("background") + ")");
             }
-        });
-        
-        /*------------------------------------
-            08. Video
-        --------------------------------------*/
-
-        $('.story-video').magnificPopup({
-            delegate: '.video',
-            type: 'iframe'
         });
 
         /*------------------------------------
@@ -270,25 +257,6 @@
                 }
             });
         }
-
-        /*------------------------------------
-            15. CountUp
-        --------------------------------------*/
-
-        $('.countup').counterUp({
-            delay: 25,
-            time: 2000
-        });
-
-        /*------------------------------------
-            16. Countdown
-        --------------------------------------*/
-
-        // CountDown for coming soon page
-        $(".countdown").countdown({
-            date: "01 Jan 2021 00:01:00", //set your date and time. EX: 15 May 2014 12:00:00
-            format: "on"
-        });
       
     });
 
@@ -296,36 +264,16 @@
     $window.on("load", function() {
 
         /*------------------------------------
-            17. Isotop
-        --------------------------------------*/
+            xx. Scroll To Contact
+        -------------------------------------*/
 
-        // isotope with magnificPopup
-        $('.gallery').magnificPopup({
-            delegate: '.popimg',
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
+        $(".scroll-to-contact").on('click', function (event) {
+            event.preventDefault();
+            var contactEl = document.querySelector('#contactUs');
+            $("html, body").animate({
+                scrollTop: contactEl.offsetTop
+            }, 600);
         });
-
-        var $gallery = $('.gallery').isotope({
-            // options
-        });
-
-        // filter items on button click
-        $('.filtering').on('click', 'span', function() {
-            var filterValue = $(this).attr('data-filter');
-            $gallery.isotope({
-                filter: filterValue
-            });
-        });
-
-        $('.filtering').on('click', 'span', function() {
-            $(this).addClass('active').siblings().removeClass('active');
-        });
-
-        // stellar
-        $window.stellar();
 
     });
 

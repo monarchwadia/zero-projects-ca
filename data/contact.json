@@ -1,4 +1,10 @@
 {
   "phoneNumber": "(999) 888-8888",
-  "emailAddress": "hello@zeroprojects.ca"
+  "emailAddress": "hello@zeroprojects.ca",
+  "section": {
+    "title": "Hi. How may can we make your day better?",
+    "button": {
+      "text": "Send"
+    }
+  }
 }

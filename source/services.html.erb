@@ -1,85 +1,134 @@
 <!-- start page title section -->
 <section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="/images/banner/bg9.jpg">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-12">
-        <h1><%= data.services.title %></h1>
-      </div>
-      <div class="col-md-12">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="javascript:void(0)"><%= data.services.title %></a></li>
-        </ul>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    <%= data.services.title %>
+                </h1>
+            </div>
+        </div>
     </div>
-
-  </div>
 </section>
 <!-- end page title section -->
 
 <!-- start service section -->
 <section class="bg-light-gray">
-  <div class="container">
-
-    <div class="row">
-      <% data.services.list.each do |service| %>
-      <div class="col-lg-4 col-md-12 margin-30px-bottom sm-margin-20px-bottom">
-        <div class="services-block padding-45px-tb padding-25px-lr sm-padding-35px-tb sm-padding-20px-lr xs-padding-30px-tb xs-padding-15px-lr last-paragraph-no-margin wow fadeInUp"
-          data-wow-delay=".2s">
-          <div class="title-box margin-25px-bottom sm-margin-15px-bottom">
-            <i class="fas <%= service.icon %> text-theme-color"></i>
-            <div class="box-circle-large"></div>
-            <div class="box-circle-small"></div>
-          </div>
-          <h3 class="margin-10px-bottom font-size22 md-font-size20 xs-font-size18"><%= service.name %></h3>
-          <p class="font-size16 line-height-28 sm-font-size14 sm-line-height-24"><%= service.description %></p>
+    <div class="container">
+        <div class="row">
+            <% data.services.list.each do |service| %>
+            <div class="col-lg-4 col-md-12 margin-30px-bottom sm-margin-20px-bottom">
+                <div class="services-block padding-45px-tb padding-25px-lr sm-padding-35px-tb sm-padding-20px-lr xs-padding-30px-tb xs-padding-15px-lr last-paragraph-no-margin wow fadeInUp"
+                    data-wow-delay=".2s">
+                    <div class="title-box margin-25px-bottom sm-margin-15px-bottom">
+                        <i class="fas <%= service.icon %> text-theme-color"></i>
+                        <div class="box-circle-large"></div>
+                        <div class="box-circle-small"></div>
+                    </div>
+                    <h3 class="margin-10px-bottom font-size22 md-font-size20 xs-font-size18">
+                        <%= service.name %>
+                    </h3>
+                    <p class="font-size16 line-height-28 sm-font-size14 sm-line-height-24">
+                        <%= service.description %>
+                    </p>
+                </div>
+            </div>
+            <% end %>
         </div>
-      </div>
-      <% end %>
     </div>
-
-  </div>
 </section>
 <!-- end service section -->
 
 <!-- start technologies section -->
 <div class="section-clients" style="background-color: #f3f3f3">
-  <div class="container">
-    <div class="owl-carousel owl-theme clients" id="clients">
-      <% data.services.technologies.each do |technology| %>
-      <div class="item" style="text-align: center"><img style="width: 100px !important" alt="<%= technology.name %>"
-          src="<%= technology.image.color %>"></div>
-      <% end %>
+    <div class="container">
+        <div class="owl-carousel owl-theme clients" id="clients">
+            <% data.services.technologies.each do |technology| %>
+            <div class="item" style="text-align: center">
+                <img style="width: 100px !important" alt="<%= technology.name %>" src="<%= technology.image.color %>">
+            </div>
+            <% end %>
+        </div>
     </div>
-  </div>
 </div>
 <!-- end technologies section -->
 
-<!-- start about section -->
+<!-- start detail sections -->
+<% if data.services.sections? %>
+<% data.services.sections.each_with_index do |section, index| %>
+<% if index % 2 == 0 %>
 <section>
-  <div class="container">
-    <div class="row">
+<% else %>
+<section class="bg-light-gray">
+<% end %>
+    <div class="container">
+        <div class="row">
+            <% if index % 2 != 0 %>
+            <div class="col-lg-6 col-md-12 sm-text-center sm-margin-20px-bottom">
+                <img src="<%= section.imageUrl || 'images/content/content-04.png' %>" alt="" />
+            </div>
+            <% end %>
 
-      <div class="col-lg-7 col-md-12 sm-margin-50px-bottom xs-margin-30px-bottom sm-text-center">
-        <img src="/images/content/about.png" alt="" />
-      </div>
+            <% if index % 2 == 0 %>
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+            <% else %>
+            <div class="col-lg-6 col-md-12">
+            <% end %>
 
-      <div class="col-lg-5 col-md-12">
+                <% if index % 2 == 0 %>
+                <div class="padding-30px-right sm-no-padding padding-50px-tb md-padding-30px-tb vert-center">
+                <% else %>
+                <div class="padding-30px-left sm-no-padding padding-50px-tb md-padding-30px-tb vert-center">
+                <% end %>
 
-        <div class="padding-50px-left sm-no-padding">
-          <h3 class="sm-margin-lr-auto xs-width-100">About Crysta</h3>
-          <h4 class="font-size18 xs-font-size16 font-weight-500">Powerful tool for your customer to help user find
-            solution for build something great.</h4>
-          <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            officia deserunt mollit anim id est laborum. Cillum dolore eu fugiat nulla pariatur.</p>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum
-            Cillum dolore eu fugiat nulla pariatur.</p>
-          <a href="javascript:void(0)" class="butn margin-10px-top">Join Our Team</a>
+                    <% if section.label? %>
+                    <div class="alt-font text-theme-color margin-5px-bottom letter-spacing-1">
+                        <%= section.label %>
+                    </div>
+                    <% end %>
+
+                    <% if section.title? %>
+                    <h4>
+                        <%= section.title %>
+                    </h4>
+                    <% end %>
+
+                    <% if section.body? %>
+                    <p>
+                        <%= section.body.html_safe %>
+                    </p>
+                    <% end %>
+
+                    <% if section.list? %>
+                    <ul class="list-style margin-30px-bottom">
+                        <% section.list.items.each do |listItem| %>
+                        <li>
+                            <%= listItem %>
+                        </li>
+                        <% end %>
+                    </ul>
+                    <% end %>
+
+                    <% if section.buttons? %>
+                    <% section.buttons.each do |button| %>
+                    <a href="<%= button.link || 'javascript:void(0)' %>" class="butn">
+                        <%= button.text %>
+                    </a>
+                    <% end %>
+                    <% end %>
+
+                </div>
+            </div>
+
+            <% if index % 2 == 0 %>
+            <div class="col-lg-6 col-md-12 sm-text-center sm-margin-30px-bottom order-1 order-lg-2">
+                <img src="<%= section.imageUrl || '/images/content/content-04.png' %>" alt="" />
+            </div>
+            <% end %>
+
         </div>
-
-      </div>
     </div>
-  </div>
 </section>
-<!-- end about section -->
+<% end %>
+<% end %>
+<!-- end detail sections -->

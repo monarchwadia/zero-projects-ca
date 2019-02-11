@@ -13,6 +13,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+activate :directory_indexes
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "insights"
@@ -90,7 +92,12 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+activate :imageoptim do |options|
+  options.manifest = true
+  options.image_extensions = %w(.png .jpg .gif .svg)
+end
+
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end

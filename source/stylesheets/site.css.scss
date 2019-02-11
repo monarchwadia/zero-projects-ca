@@ -3,3 +3,17 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.scroll-to-contact:active,
+.scroll-to-contact:visited,
+.scroll-to-contact:focus {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .vert-center {
+    position: relative !important;
+    transform: none !important;
+    top: 0 !important;
+  }
+}

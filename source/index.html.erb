@@ -16,8 +16,8 @@
                         <%= data.home.splash.body %>
                     </p>
                     <div class="wow fadeInUp story-video" data-wow-delay=".4s">
-                        <a href="casestudies.html" class="butn margin-10px-right vertical-align-middle">
-                            Explore our projects
+                        <a href="<%= data.home.splash.button.link %>" class="butn margin-10px-right vertical-align-middle">
+                            <%= data.home.splash.button.text %>
                         </a>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
             <!-- start right image banner -->
             <div class="col-lg-6 col-md-12 sm-text-center">
                 <div class="banner-img">
-                    <img src="images/content/content-01.png" class="img-fluid float-right width-100" alt="">
+                    <img src="/images/content/content-01.png" class="img-fluid float-right width-100" alt="">
                 </div>
             </div>
             <!-- end right image banner -->
@@ -36,7 +36,7 @@
 
     <!-- start shape area -->
     <div class="header-shape-bg">
-        <img src="images/banner/header-bg02.svg" class="img-fluid width-100" alt="">
+        <img src="/images/banner/header-bg02.svg" class="img-fluid width-100" alt="">
     </div>
     <!-- end shape area -->
 </div>
@@ -106,7 +106,7 @@
 
             <% if index % 2 == 0 %>
             <div class="col-lg-6 col-md-12 sm-text-center sm-margin-30px-bottom order-1 order-lg-2">
-                <img src="<%= section.imageUrl || 'images/content/content-04.png' %>" alt="" />
+                <img src="<%= section.imageUrl || '/images/content/content-04.png' %>" alt="" />
             </div>
             <% end %>
         </div>

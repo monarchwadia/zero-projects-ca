@@ -1,5 +1,15 @@
 {
   "title": "Services",
+  "sections": [
+    {
+      "title": "We offer JavaScript expertise with a focus on the frontend",
+      "body": "We're proudly a part of the amazing full stack Javascript community. Node.js, React, Vue and Angular have revolutionized how products are built, and we're no strangers to any of them.<br><br>See what we can do for your company.",
+      "buttons": [{
+        "text": "Services",
+        "link": "/services"
+      }]
+    }
+  ],
   "list": [
     {
       "name": "Frontend",
