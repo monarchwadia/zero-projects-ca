@@ -12,57 +12,19 @@
   ],
   "list": [
     {
-      "name": "Frontend",
-      "description": "We are a leading company in front-end development.",
-      "icon": "fa-address-card",
-      "samples": [
-        {
-          "name": "React",
-          "links": []
-        },
-        {
-          "name": "Vue.js",
-          "links": []
-        },
-        {
-          "name": "Angular",
-          "links": []
-        }
-      ]
+      "name": "Business Applications",
+      "description": "We make software that makes businesses tick. Our specialty.",
+      "icon": "fa-briefcase"
     },
     {
-      "name": "Full Stack",
-      "description": "We are a leading company in full stack development.",
-      "icon": "fa-cog",
-      "samples": [
-        {
-          "name": "Microsites",
-          "links": []
-        },
-        {
-          "name": "Node.js",
-          "links": []
-        },
-        {
-          "name": "Architecture",
-          "links": []
-        }
-      ]
+      "name": "Web, Mobile & SaaS",
+      "description": "We build and deploy applications across multiple platforms.",
+      "icon": "fa-cloud"
     },
     {
-      "name": "Open Source",
-      "description": "We are a leading company in open source development.",
-      "icon": "fa-users",
-      "samples": [
-        {
-          "name": "Alpine",
-          "links": []
-        },
-        {
-          "name": "SDK & Library Development",
-          "links": []
-        }
-      ]
+      "name": "API Integrations",
+      "description": "We help businesses connect their systems together via the web.",
+      "icon": "fa-share-alt"
     }
   ],
   "technologies": [
