@@ -12,19 +12,19 @@
   ],
   "list": [
     {
-      "name": "Business Applications",
-      "description": "We make software that makes businesses tick. Our specialty.",
+      "name": "Knowledgeable management",
+      "description": "Our CEO and Founder is a software architect, having given technical instruction to 100's of developers simultaneously.",
       "icon": "fa-briefcase"
     },
     {
-      "name": "Web, Mobile & SaaS",
-      "description": "We build and deploy applications across multiple platforms.",
+      "name": "Excellent company track record",
+      "description": "Our team members have worked with Fortune 500 corporations, AI companies, SaaS platforms, accelerated startups and high-performance systems.",
       "icon": "fa-cloud"
     },
     {
-      "name": "API Integrations",
-      "description": "We help businesses connect their systems together via the web.",
-      "icon": "fa-share-alt"
+      "name": "High quality local Canadian talent",
+      "description": "We are a Canadian corporation subject to Canadian laws, and almost 100% of our team is located in Ontario. We hire locally to maximize quality.",
+      "icon": "fa-canadian-maple-leaf"
     }
   ],
   "technologies": [
