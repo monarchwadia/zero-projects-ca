@@ -32,24 +32,21 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="/work">Case Studies</a>
-                                    <ul>
-                                        <% blog('work').articles[0..3].each do |article| %>
-                                        <li>
-                                            <%= link_to article.title, article %>
-                                        </li>
-                                        <% end %>
-                                    </ul>
-                                </li>
+                                <li><a href="/work">Case Studies</a></li>
 
                                 <li><a href="/insights">Insights</a>
+                                    <% if blog('insights').articles %>
                                     <ul>
-                                        <% blog('insights').articles[0...3].each do |article| %>
+                                        <li>
+                                            <span class="new-tag">new</span> <%= link_to blog('insights').articles[0].title, blog('insights').articles[0] %>
+                                        </li>
+                                        <% blog('insights').articles[1...2].each do |article| %>
                                         <li>
                                             <%= link_to article.title, article %>
                                         </li>
                                         <% end %>
                                     </ul>
+                                    <% end %>
                                 </li>
                             </ul>
                             <!-- end menu Area -->

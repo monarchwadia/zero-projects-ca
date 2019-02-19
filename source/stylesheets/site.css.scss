@@ -10,10 +10,25 @@
   color: #fff;
 }
 
+.new-tag {
+  float: left;
+  padding: 0px 8px;
+  margin: 0px 8px 0px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4d4fcb;
+  font-size: .8em;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 991px) {
   .vert-center {
     position: relative !important;
     transform: none !important;
     top: 0 !important;
+  }
+
+  .new-tag {
+    margin: 8px;
   }
 }
