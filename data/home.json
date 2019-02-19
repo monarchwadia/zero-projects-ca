@@ -1,6 +1,7 @@
 {
   "splash": {
     "title": "Building business software that matters.",
+    "bannerImage": "/images/content/content-01.png",
     "body": "Zero is a boutique software agency from Toronto. We custom-build apps and tools for companies like yours.",
     "button": {
       "text": "Explore our projects",
