@@ -120,17 +120,17 @@
 <section class="service-section bg-light-gray">
     <div class="container">
         <div class="text-center section-heading">
-            <h2>Our Services</h2>
+            <h2>Why you should trust us</h2>
         </div>
         <div class="row">
-            <% data.services.list[0..3].each do |service| %>
+            <% data.whytrustus.list[0..3].each do |reason| %>
             <div class="col-lg-4 col-md-12 sm-margin-20px-bottom">
                 <div class="service-block2 text-center">
-                    <div class="item-icon margin-20px-bottom"><span class="fas <%= service.icon %>"></span>
+                    <div class="item-icon margin-20px-bottom"><span class="fas <%= reason.icon %>"></span>
                     </div>
                     <div class="item-text">
-                        <h3 class="margin-10px-bottom font-size22 md-font-size20 xs-font-size18"><%= service.name %></h3>
-                        <p class="font-size16 line-height-28"><%= service.description %></p>
+                        <h3 class="margin-10px-bottom font-size22 md-font-size20 xs-font-size18"><%= reason.name %></h3>
+                        <p class="font-size16 line-height-28"><%= reason.description %></p>
                     </div>
                 </div>
             </div>

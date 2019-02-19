@@ -2,8 +2,24 @@
   "title": "Services",
   "sections": [
     {
-      "title": "We offer JavaScript expertise with a focus on the frontend",
-      "body": "We're proudly a part of the amazing full stack Javascript community. Node.js, React, Vue and Angular have revolutionized how products are built, and we're no strangers to any of them.<br><br>See what we can do for your company.",
+      "title": "Cloud & SaaS Software Development",
+      "body": "We build high-value, web-based software for companies using technologies like Java, React, Angular, Node.js and Python. We work with companies to modernize and extend their legacy systems. We also build SDKs to promote companies' strategic technical initiatives. <ul class = \"list-style margin-30px-bottom\"><li>Single page web applications (SPAs)</li><li>MVC web applications</li><li>Legacy system modernization</li><li>Legacy system extension</li><li>Custom SDKs and Libraries</li></ul>",
+      "buttons": [{
+        "text": "Services",
+        "link": "/services"
+      }]
+    },
+    {
+      "title": "Desktop & Mobile Software Development",
+      "body": "We leverage web technologies to create single-source applications that deploy to web, desktop, native iOS and Android environments. We're also experienced in building offline-first mobile applications, PWAs, and desktop applications. <ul class = \"list-style margin-30px-bottom\"><li>Hybrid web, desktop, iOS and Android apps</li><li>Offline-first mobile and desktop apps</li><li>Progressive Web Apps (PWAs)</li><li>Packaged HTML5 apps for desktops</li><li>Responsive web apps</li></ul>",
+      "buttons": [{
+        "text": "Services",
+        "link": "/services"
+      }]
+    },
+    {
+      "title": "API Integrations",
+      "body": "We help companies integrate with 3rd-party computer systems via APIs. We also build APIs for companies who would like to sell or expose their database or services securely via cloud-based deployments. <ul class = \"list-style margin-30px-bottom\"><li>ETL Integrations</li><li>OAuth authentication</li><li>Social media integrations</li><li>3rd-Party API integrations</li><li>Payment gateway integrations</li></ul>",
       "buttons": [{
         "text": "Services",
         "link": "/services"
@@ -12,57 +28,19 @@
   ],
   "list": [
     {
-      "name": "Frontend",
-      "description": "We are a leading company in front-end development.",
-      "icon": "fa-address-card",
-      "samples": [
-        {
-          "name": "React",
-          "links": []
-        },
-        {
-          "name": "Vue.js",
-          "links": []
-        },
-        {
-          "name": "Angular",
-          "links": []
-        }
-      ]
+      "name": "Excellent company track record",
+      "description": "Zero has built solutions across several industries including trucking/transportation, finance, recruitment, education, sports tech, and photography. Clients delighted with our service include fintech startups, corporations  with 1000+ employees, AI startups, and industry-acclaimed SaaS platforms with 15,000,000+ users.",
+      "icon": "fa-chart-line"
     },
     {
-      "name": "Full Stack",
-      "description": "We are a leading company in full stack development.",
-      "icon": "fa-cog",
-      "samples": [
-        {
-          "name": "Microsites",
-          "links": []
-        },
-        {
-          "name": "Node.js",
-          "links": []
-        },
-        {
-          "name": "Architecture",
-          "links": []
-        }
-      ]
+      "name": "Developer-founded, developer-driven",
+      "description": "We are managed by strong technical leadership that has led 100's of developers across multiple industries. Even our non-technical team members possess software development skills, including project managers and QA. Your project will be handled by a team that intimately knows how to build great software.",
+      "icon": "fa-laptop-code"
     },
     {
-      "name": "Open Source",
-      "description": "We are a leading company in open source development.",
-      "icon": "fa-users",
-      "samples": [
-        {
-          "name": "Alpine",
-          "links": []
-        },
-        {
-          "name": "SDK & Library Development",
-          "links": []
-        }
-      ]
+      "name": "Proudly a local Canadian company",
+      "description": "We are a Canadian corporation subject to Canadian laws and familiar with the processes and requirements of North American businesses. Almost 100% of our team is located in Ontario, mostly in Toronto. We vet and hire the strongest local talent to maximize service quality and eliminate time-zone and communication issues.",
+      "icon": "fa-map-marker-alt"
     }
   ],
   "technologies": [

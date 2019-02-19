@@ -14,6 +14,14 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :directory_indexes
+set :markdown_engine, :redcarpet
+
+# activate middleman-syntax
+activate :syntax
+
+# configure redcarpet to use github style fenced code blocks
+# (tripe back ticks ```) to denote code
+set :markdown, :fenced_code_blocks => true
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths

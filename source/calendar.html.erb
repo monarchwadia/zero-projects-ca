@@ -1,7 +1,14 @@
 ---
 pageable: true
+blog: 'insights'
 ---
 <h1>Archive for
+  <%# These variables are necessary for the following code to work %>
+  <% year ||= Time.new.year %>
+  <% month ||= Time.new.month %>
+  <% day ||= Time.new.day %>
+  <% page_type ||= 'year' %>  
+
   <% case page_type
      when 'day' %>
   <%= Date.new(year, month, day).strftime('%b %e %Y') %>

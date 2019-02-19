@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "name": "Excellent company track record",
+      "description": "Zero has built solutions across several industries including trucking/transportation, finance, recruitment, education, sports tech, and photography. Clients delighted with our service include fintech startups, corporations  with 1000+ employees, AI startups, and industry-acclaimed SaaS platforms with 15,000,000+ users.",
+      "icon": "fa-chart-line"
+    },
+    {
+      "name": "Developer-founded, developer-driven",
+      "description": "We are managed by strong technical leadership that has led 100's of developers across multiple industries. Even our non-technical team members possess software development skills, including project managers and QA. Your project will be handled by a team that intimately knows how to build great software.",
+      "icon": "fa-laptop-code"
+    },
+    {
+      "name": "Proudly a local Canadian company",
+      "description": "We are a Canadian corporation subject to Canadian laws and familiar with the processes and requirements of North American businesses. Almost 100% of our team is located in Ontario, mostly in Toronto. We vet and hire the strongest local talent to maximize service quality and eliminate time-zone and communication issues.",
+      "icon": "fa-map-marker-alt"
+    }
+  ]
+}
