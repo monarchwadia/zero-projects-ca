@@ -1,5 +1,6 @@
 ---
 title: Offline-First Progressive Web App (PWA) for the Zebra TC70 with DataWedge
+blog: 'work'
 ---
 
 While developing mobile applications can be relatively straight-forward, there is the occasional project that demands a greater knowledge of the technologies available. In our case, it was when a transport giant came to us seeking a solution for their driver’s Zebra devices. The proposal was to create a mobile application that can manage a ton of data, run on a Zebra device and most importantly, work regardless of a wireless connection. There are many ways to tackle these requirements; however, when a short deadline is present, we are forced to think a little harder about the technologies worthy to use. That being said, although the performance of native mobile applications is strong, we can immediately rule them out due to time constraints and the fact that performance is not our biggest worry. We found that the most suited path to success would be to create a Progressive Web Application (PWA) using a technology such as Quasar. A PWA offers all that is needed to create an offline-first application with less development time needed than a native application. Thus, after combining a few technologies to create the PWA, we managed to smash deadlines with an application that is on par in terms of performance and stability.

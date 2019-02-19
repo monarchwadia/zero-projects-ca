@@ -2,6 +2,7 @@
 title: Object Inheritance Using Functional Composition in JavaScript
 author: Andras Varga
 image: /images/blog/blog-1.jpg
+blog: 'insights'
 ---
 
 
