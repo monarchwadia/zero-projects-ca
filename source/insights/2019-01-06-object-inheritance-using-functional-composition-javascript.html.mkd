@@ -1,0 +1,145 @@
+---
+title: Object Inheritance Using Functional Composition in JavaScript
+author: Andras Varga
+image: /images/blog/blog-1.jpg
+---
+
+
+### Picture this...
+
+You’re a developer working away at a project which is responsible for modelling animals. At this point, you have created an Animal class which is to be extended by each animal you create.
+
+```javascript
+class Animal {
+  constructor(name) {
+    this.name = name;
+    this.isHungry = true;
+  }
+
+  getName() {
+    return this.name;
+  }
+
+  eat() {
+    this.isHungry = false;
+  }
+}
+```
+
+Using this class, you create a Dog which can bark and a Cat that can hiss…
+
+```javascript
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+
+  bark() {
+    // Crazy barking logic
+    console.log("Woof!");
+  }
+}
+
+class Cat extends Animal {
+  constructor(name) {
+    super(name);
+  }
+
+  hiss() {
+    // Crazy hissing logic
+    console.log("Hiss!");
+  }
+}
+
+const dog = new Dog('Mr. Dog');
+dog.bark(); // Woof!
+dog.eat(); // isHungry = false
+
+const cat = new Cat('Mrs. Cat');
+cat.hiss(); // Hiss!
+cat.eat(); // isHungry = false
+```
+
+All was going well until your manager had a demand for you: a Dog-Cat that can hiss, bark and does not need to eat! You now have to selectively choose logic out of the Animal, as well as the Dog and Cat to create the Dog-Cat. This is a pretty messy task while using the current code and could be avoided if using functional composition.
+
+### Enter: Functional Composition
+
+Object inheritance is an alternative to classical inheritance and can be very powerful when used properly. The idea is that instead of designing our behaviour around what it belongs to, we design and group it around what it does. We then piece the behaviour together using functional composition to compose our object. That being said, instead of defining a basis to extend for our Cat and Dog classes, we will define the behaviour of both.
+
+```javascript
+const canEat = state => ({
+  eat: () => state.isHungry = false
+});
+
+const canBark = state => ({
+  bark: () => console.log("Woof!")
+});
+
+const canHiss = state => ({
+  hiss: () => console.log("Hiss!")
+});
+```
+
+These three functions are defined to be closures. Thus, they accept a `state` from a higher-order function which in our case will be the animals. They then return an object of behavioural methods that belong to an animal that `canBark`, `canHiss` or `canEat`. This now allows us to compose an animal using these functions.
+
+```javascript
+const Dog = name => {
+  let state = {
+    name,
+    isHungry: true
+  };
+
+  return Object.assign({}, canBark(state), canEat(state));
+};
+
+const Cat = name => {
+  let state = {
+    name,
+    isHungry: true
+  };
+
+  return Object.assign({}, canHiss(state), canEat(state));
+};
+
+const dog = Dog('Mr. Dog');
+dog.bark(); // Woof!
+dog.eat(); // isHungry = false
+
+const cat = Cat('Mrs. Cat');
+cat.hiss(); // Hiss!
+cat.eat(); // isHungry = false
+```
+
+In the code above, you will see the Dog and Cat classes rewritten using functional composition. Immediately, you can see that `state` is defined which holds the state of the animal. We then use this to construct the behaviour of the animal using `Object.assign` and the previously defined functions. It is important to realize that `Object.assign` will take the returned objects of each function and merge them into one resulting in our animal’s object. In this case, our Dog can still bark, our Cat can still hiss and both can still eat. Aside from that, we have also created a truly private state as no code besides the behavioural functions and the animal itself can access `state`.
+
+Now that we have all of our behaviour divided into separate functions, we can now easily create the demanded Dog-Cat!
+
+```javascript
+const DogCat = name => {
+  let state = {
+    name
+  };
+
+  return Object.assign({}, canHiss(state), canBark(state));
+};
+
+const dogCat = DogCat('Mr. Dog Cat');
+dogCat.hiss(); // Hiss!
+dogCat.bark(); // Woof!
+```
+
+It's that easy! In fact, we could create many different variations of animals using the same three functions we have defined without having any copied code.
+
+In addition to this, we can version our models easily without making a direct change to any animal itself. If we wanted a Dog that `canBark` and another Dog that can `canDeeplyBark` we can easily make another function that knows how to deal with the state of the dog to give it the behaviour of a deep bark.
+
+### Conclusion
+
+Object inheritance using functional composition provides us with three major favours:
+
+- Separate state from behaviour
+- Separate behaviour from identity
+- More importantly, prevent the developer from predicting the future
+
+It is fairly common for a developer to attempt to predict the future when writing a class using classical inheritance. It is also fairly common for these predictions to go unused as the project matures resulting in many unused methods. Functional composition allows the developer to build only what is needed and grants the power to expand easily later on.
+
+Both classical inheritance and functional composition have their strengths and weaknesses. It comes down to the situation when deciding which to use. It's known that if the relationship you are trying to model is more of a `Has An` (eg. a car has an engine), then use functional composition. If it's more of `Is a` (eg. john is a human) then use classical inheritance. Although this is just a loose rule as more and more are starting to favour functional composition over the alternatives.
