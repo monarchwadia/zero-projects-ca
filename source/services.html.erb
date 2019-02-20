@@ -16,7 +16,7 @@
 <div class="section-clients" style="background-color: #f3f3f3">
     <div class="container">
         <div class="owl-carousel owl-theme clients" id="clients">
-            <% data.services.technologies.each do |technology| %>
+            <% data.technologies.list.each do |technology| %>
             <div class="item" style="text-align: center">
                 <img style="width: 100px !important" alt="<%= technology.name %>" src="<%= technology.image.color %>">
             </div>

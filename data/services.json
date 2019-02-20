@@ -43,49 +43,5 @@
       "description": "We are a Canadian corporation subject to Canadian laws and familiar with the processes and requirements of North American businesses. Almost 100% of our team is located in Ontario, mostly in Toronto. We vet and hire the strongest local talent to maximize service quality and eliminate time-zone and communication issues.",
       "icon": "fa-map-marker-alt"
     }
-  ],
-  "technologies": [
-    {
-      "name": "Node.js",
-      "image": {
-        "color": "/images/technologies/nodejs-color.png",
-        "gray": "/images/technologies/nodejs-gray.png"
-      }
-    },
-    {
-      "name": "JavaScript",
-      "image": {
-        "color": "/images/technologies/js-color.png",
-        "gray": "/images/technologies/js-gray.png"
-      }
-    },
-    {
-      "name": "TypeScript",
-      "image": {
-        "color": "/images/technologies/ts-color.png",
-        "gray": "/images/technologies/ts-gray.png"
-      }
-    },
-    {
-      "name": "React",
-      "image": {
-        "color": "/images/technologies/react-color.png",
-        "gray": "/images/technologies/react-gray.png"
-      }
-    },
-    {
-      "name": "Angular",
-      "image": {
-        "color": "/images/technologies/angular-color.png",
-        "gray": "/images/technologies/angular-gray.png"
-      }
-    },
-    {
-      "name": "Vue.js",
-      "image": {
-        "color": "/images/technologies/vue-color.png",
-        "gray": "/images/technologies/vue-gray.png"
-      }
-    }
   ]
 }

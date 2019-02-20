@@ -1,0 +1,61 @@
+{
+  "title": "Technologies",
+  "bannerImage": "/images/banner/bg9.jpg",
+  "sections": [
+    {
+      "title": "JavaScript Frameworks & Libraries",
+      "body": ""
+    },
+    {
+      "title": "Node.js",
+      "body": ""
+    },
+    {
+      "title": "Java",
+      "body": ""
+    },
+    {
+      "title": "Python",
+      "body": ""
+    }
+  ],
+  "list": [
+    {
+      "name": "Node.js",
+      "image": {
+        "color": "/images/technologies/nodejs-color.png",
+        "gray": "/images/technologies/nodejs-gray.png"
+      }
+    }, {
+      "name": "JavaScript",
+      "image": {
+        "color": "/images/technologies/js-color.png",
+        "gray": "/images/technologies/js-gray.png"
+      }
+    }, {
+      "name": "TypeScript",
+      "image": {
+        "color": "/images/technologies/ts-color.png",
+        "gray": "/images/technologies/ts-gray.png"
+      }
+    }, {
+      "name": "React",
+      "image": {
+        "color": "/images/technologies/react-color.png",
+        "gray": "/images/technologies/react-gray.png"
+      }
+    }, {
+      "name": "Angular",
+      "image": {
+        "color": "/images/technologies/angular-color.png",
+        "gray": "/images/technologies/angular-gray.png"
+      }
+    }, {
+      "name": "Vue.js",
+      "image": {
+        "color": "/images/technologies/vue-color.png",
+        "gray": "/images/technologies/vue-gray.png"
+      }
+    }
+  ]
+}
