@@ -12,6 +12,7 @@
     {
       "label": "Founded and run by developers",
       "title": "Skills and experience matter.",
+      "imageUrl": "images/content/content-02.png",
       "body": "We focus on the two main drivers of success in a software project: <ul class = \"list-style margin-30px-bottom\"><li>Our people, who we've chosen for their experience in multiple technologies and experience in Javascript</li><li>Our processes, which we've optimized for speed of delivery, customer support and clear communication.</li></ul><br>Read what our talent has to say about technology.",
       "buttons": [
         {
@@ -23,6 +24,7 @@
     {
       "label": "A boutique software agency",
       "title": "Small team. Big results.",
+      "imageUrl": "images/content/content-03.png",
       "body": "Choosing Zero means choosing the quality and speedy delivery that only comes with compact teams.<br><br>Here's what you get by choosing small:  <ul class = \"list-style margin-30px-bottom\"><li>Minimum communication overhead, quicker turnaround times, faster delivery.</li><li>Extremely fast response times, direct access to our management, organic and well-groomed processes.</li><li>High quality customer service, unfettered access to our expertise.</li></ul><br>See what we've built for others who trusted us.",
       "buttons": [
         {
@@ -34,6 +36,7 @@
     {
       "label": "React, Vue, Angular, Node",
       "title": "JavaScript Architects",
+      "imageUrl": "images/content/content-04.png",
       "body": "The amazing Javascript community has truly revolutionized how products are built. Having a single language across frontend, backend, desktop and mobile is a game changer. We know how to leverage this flexibility in a business setting. We also build modules, libraries and frameworks that enable API integrations, code sharing, open source initiatives and more. <br><br>See what we can do for your company.",
       "buttons": [
         {
