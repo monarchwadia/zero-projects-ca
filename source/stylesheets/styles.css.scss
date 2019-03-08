@@ -371,6 +371,19 @@ a.butn.white {
   li.current>a,
   >li.active>a {
     color: $PrimaryColor;
+    position: relative;
+
+    &::before {
+      content: '';
+  
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+  
+      border-width: 0 0 2px;
+      border-style: solid;
+    }
   }
 }
 
@@ -2750,6 +2763,10 @@ ul.countdown li {
 .blogs {
   .post {
     margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     .content {
       padding: 30px;

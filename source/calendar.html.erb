@@ -36,7 +36,7 @@ blog: 'insights'
   <% page_articles.each_with_index do |article, i| %>
   <li>
     <%= link_to article.title, article %> <span>
-      <%= article.date.strftime('%b %e') %></span></li>
+      <%= article.date.strftime('%b %e, %Y') %></span></li>
   <% end %>
 </ul>
 
