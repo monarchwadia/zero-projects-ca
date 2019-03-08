@@ -3,31 +3,33 @@
     <div class="container">
         <div class="row">
             <div class="col-12 wow fadeIn">
-
-                <div class="section-heading">
-                    <h3>
-                        <%= data.contact.section.title %>
-                    </h3>
-                </div>
-
-                <form method="POST" action="https://formspree.io/monarch@zeroprojects.ca" class="mailform off2">
-                    <input type="hidden" name="form-type" value="contact">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
-                        </div>
-                        <div class="col-md-12">
-                            <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
-                        </div>
-                        <div class="mfControls col-md-12">
-                            <button type="submit" class="butn"><%= data.contact.section.button.text %></button>
-                        </div>
+                <div class="row">
+                
+                    <div class="col-lg-6 col-sm-12 order-lg-2 section-heading d-flex align-items-center justify-content-center">
+                        <h3>
+                            <%= data.contact.section.title %>
+                        </h3>
                     </div>
-                </form>
 
+                    <form method="POST" action="https://formspree.io/monarch@zeroprojects.ca" class="mailform off2 col-lg-6 col-sm-12 order-lg-1">
+                        <input type="hidden" name="form-type" value="contact">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                            </div>
+                            <div class="mfControls col-md-12">
+                                <button type="submit" class="butn"><%= data.contact.section.button.text %></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>
