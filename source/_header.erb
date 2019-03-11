@@ -23,11 +23,11 @@
 
                             <!-- start menu Area -->
                             <ul class="navbar-nav ml-auto" id="nav">
-                                <li class="<%= "active" if current_page.url == "/services/" %>"><a href="/services">Services</a></li>
+                                <li class="services_nav_link"><a href="/services">Services</a></li>
 
-                                <li class="<%= "active" if current_page.url.split('/')[1] == "work" %>"><a href="/work">Case Studies</a></li>
+                                <li class="work_nav_link"><a href="/work">Case Studies</a></li>
 
-                                <li class="<%= "active" if current_page.url.split('/')[1] == "insights" %>"><a href="/insights">Insights</a>
+                                <li class="insights_nav_link"><a href="/insights">Insights</a>
                                     <% if blog('insights').articles %>
                                     <ul>
                                         <li>

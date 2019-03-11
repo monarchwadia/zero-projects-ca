@@ -366,24 +366,22 @@ a.butn.white {
 ====================================== */
 
 /* navigation */
-.navbar-nav {
+body.work .work_nav_link > a,
+body.insights .insights_nav_link > a,
+body.services .services_nav_link > a {
+  color: $PrimaryColor;
+  position: relative;
 
-  li.current>a,
-  >li.active>a {
-    color: $PrimaryColor;
-    position: relative;
+  &::before {
+    content: '';
 
-    &::before {
-      content: '';
-  
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: 15px;
-  
-      border-width: 0 0 2px;
-      border-style: solid;
-    }
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+
+    border-width: 0 0 2px;
+    border-style: solid;
   }
 }
 
