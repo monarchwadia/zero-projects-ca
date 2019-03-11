@@ -1,11 +1,5 @@
 @import 'codestyles.scss';
 
-.vert-center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .scroll-to-contact:active,
 .scroll-to-contact:visited,
 .scroll-to-contact:focus {
@@ -24,12 +18,6 @@
 }
 
 @media screen and (max-width: 991px) {
-  .vert-center {
-    position: relative !important;
-    transform: none !important;
-    top: 0 !important;
-  }
-
   .new-tag {
     margin: 8px;
   }
