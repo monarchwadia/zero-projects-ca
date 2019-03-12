@@ -16,6 +16,9 @@ page '/*.txt', layout: false
 activate :directory_indexes
 set :markdown_engine, :redcarpet
 
+# set build directory to docs
+set :build_dir, 'docs'
+
 # activate middleman-syntax
 activate :syntax
 
