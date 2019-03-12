@@ -372,6 +372,8 @@ body.insights .insights_nav_link > a,
 body.services .services_nav_link > a {
   color: $PrimaryColor;
   position: relative;
+  display: inline-block;
+  width: auto;
 
   &::before {
     content: '';
@@ -393,6 +395,10 @@ body.services .services_nav_link > a {
 
   ul ul li.active>a {
     color: $PrimaryColor;
+  }
+
+  .navbar-nav li a {
+    margin-left: 10px;
   }
 }
 
