@@ -4,35 +4,17 @@ per_page: 5
 blog: work
 ---
 
-<!-- start page title section -->
-<section class="page-title-section theme-overlay" data-overlay-dark="7">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>
-          <%= data.work.title %>
-        </h1>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- end page title section -->
-
 <!-- start blog list section -->
 <section>
   <div class="container">
     <div class="row justify-content-md-center">
 
       <!--  start blog center-->
-      <div class="col-lg-9 col-md-12 sm-margin-50px-bottom">
+      <div class="col-lg-9 col-md-12">
 
         <% page_articles.each_with_index do |article, i| %>
         <div class=blog-list-simple>
           <div class="row">
-            <div class="col-md-12 margin-20px-bottom">
-              <div class="blog-list-simple-img"><img alt="img" src="<%= article.data.image %>"></div>
-            </div>
             <div class="col-md-12">
               <div class="blog-list-simple-text">
                 <h4>

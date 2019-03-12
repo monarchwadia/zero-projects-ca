@@ -4,7 +4,7 @@
   "sections": [
     {
       "title": "Cloud & SaaS Software Development",
-      "imageUrl": "images/content/content-05.png",
+      "imageUrl": "images/content/cloud-and-saas.png",
       "body": "We build high-value, web-based software for companies using technologies like Java, React, Angular, Node.js and Python. We work with companies to modernize and extend their legacy systems. We also build SDKs to promote companies' strategic technical initiatives. <ul class = \"list-style margin-30px-bottom\"><li>Single page web applications (SPAs)</li><li>MVC web applications</li><li>Legacy system modernization</li><li>Legacy system extension</li><li>Custom SDKs and Libraries</li></ul>",
       "buttons": [{
         "text": "Services",
@@ -13,7 +13,7 @@
     },
     {
       "title": "Desktop & Mobile Software Development",
-      "imageUrl": "images/content/content-06.png",
+      "imageUrl": "images/content/desktop-and-mobile.png",
       "body": "We leverage web technologies to create single-source applications that deploy to web, desktop, native iOS and Android environments. We're also experienced in building offline-first mobile applications, PWAs, and desktop applications. <ul class = \"list-style margin-30px-bottom\"><li>Hybrid web, desktop, iOS and Android apps</li><li>Offline-first mobile and desktop apps</li><li>Progressive Web Apps (PWAs)</li><li>Packaged HTML5 apps for desktops</li><li>Responsive web apps</li></ul>",
       "buttons": [{
         "text": "Services",
@@ -22,7 +22,7 @@
     },
     {
       "title": "API Integrations",
-      "imageUrl": "images/content/content-07.png",
+      "imageUrl": "images/content/api-integrations.png",
       "body": "We help companies integrate with 3rd-party computer systems via APIs. We also build APIs for companies who would like to sell or expose their database or services securely via cloud-based deployments. <ul class = \"list-style margin-30px-bottom\"><li>ETL Integrations</li><li>OAuth authentication</li><li>Social media integrations</li><li>3rd-Party API integrations</li><li>Payment gateway integrations</li></ul>",
       "buttons": [{
         "text": "Services",

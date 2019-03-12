@@ -366,11 +366,25 @@ a.butn.white {
 ====================================== */
 
 /* navigation */
-.navbar-nav {
+body.index .home_nav_link > a,
+body.work .work_nav_link > a,
+body.insights .insights_nav_link > a,
+body.services .services_nav_link > a {
+  color: $PrimaryColor;
+  position: relative;
+  display: inline-block;
+  width: auto;
 
-  li.current>a,
-  >li.active>a {
-    color: $PrimaryColor;
+  &::before {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+
+    border-width: 0 0 2px;
+    border-style: solid;
   }
 }
 
@@ -381,6 +395,10 @@ a.butn.white {
 
   ul ul li.active>a {
     color: $PrimaryColor;
+  }
+
+  .navbar-nav li a {
+    margin-left: 10px;
   }
 }
 
@@ -1249,11 +1267,6 @@ a.butn.white {
   .title-box {
     font-size: 42px;
   }
-}
-
-/*service block02*/
-.service-section {
-  margin-top: -3.2%;
 }
 
 .service-block2 {
@@ -2750,6 +2763,10 @@ ul.countdown li {
 .blogs {
   .post {
     margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     .content {
       padding: 30px;
